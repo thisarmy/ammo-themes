@@ -3,8 +3,8 @@
 .main-header {position: relative; padding: 0 15px}
 .main-header a, .main-header .basket {text-decoration: none; font-size: 12px; line-height: 15px; font-weight: bold; text-transform: uppercase; float: left; padding: 15px;}
 .main-header .basket {float: right; padding-top: 0;}
-.main-header .basket .name {text-indent: -10000px; background-repeat: no-repeat; background-position: center;}
-.main-header .basket .items {font-weight: normal; font-size: 9px; line-height: 12px; padding: 15px 0; text-align: center;}
+.main-header .basket .name {text-indent: -10000px; background-repeat: no-repeat; background-position: center; height: 21px;}
+.main-header .basket .items {font-weight: normal; font-size: 9px; line-height: 12px; padding-top: 15px; padding-bottom: 10px; text-align: center;}
 .main-header .basket .items .num {font-size: 12px; line-height: 15px; display: block;}
 .main-header .global-nav {float: right; padding-top: 42px; margin-bottom: 27px;}
 .main-header .global-nav li {display: inline;}

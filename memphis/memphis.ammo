@@ -26,7 +26,7 @@
 {{font Headings}}helvetica, arial, sans-serif{{/font}}
 {{font Nav}}helvetica, arial, sans-serif{{/font}}
 
-{{logo Logo}}{{/logo}}
+{{logo Logo}}example.png{{/logo}}
 
 {{image Apple Touch Icon}}{{/image}}
 {{image Favicon}}{{/image}}
