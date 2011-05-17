@@ -4,6 +4,7 @@
 .main-header a {padding: 15px 8px;}
 
 .product-thumbnails .product {width: 290px; float: left; padding-top: 15px; border-top-width: 5px; border-top-style: solid; margin-bottom: 30px;}
+.product-thumbnails .product img {max-width: 290px;}
 .product-thumbnails .product:nth-child(even) {margin-left: 30px;}
 .product-thumbnails .product:nth-child(odd) {clear: both;}
 
@@ -11,6 +12,7 @@
 .order-wrap .fields {margin-bottom: 30px;}
 
 .single-product .product-detail {padding-top: 30px;}
+.single-product .product-images img {max-width: 610px}
 
 /*.main-header h1.logo {margin-right: 15px;}
 .main-header .global-nav {float: none; text-align: right;}
