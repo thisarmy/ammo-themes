@@ -107,7 +107,6 @@ fieldset {border-color: {{colours.canvasBorder}};}
 .main-footer a:focus, .main-footer a:hover {color: {{colours.footerNavRollover}};}
 .main-footer nav li, {border-left-color: {{colours.footerNav}};}
 
-
 .main-header .basket .name {background-image: url({{images.cartIcon.fullURL}});}
 
 {{customCSS}}

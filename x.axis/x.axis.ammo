@@ -135,6 +135,7 @@ hr, fieldset, fieldset legend,
 
 .button, a.button, a.button:visited, a.button:focus {color: {{colours.headings}};}
 
+.quick-nav .basket,
 .global-nav .basket {background-image: url({{images.cartIcon.fullURL}});}
 
 {{if logos.logo}}

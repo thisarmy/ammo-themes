@@ -27,7 +27,7 @@
 {{font Headings}}helvetica, arial, sans-serif{{/font}}
 {{font Nav}}helvetica, arial, sans-serif{{/font}}
 
-{{logo Logo}}example.png{{/logo}}
+{{logo Logo}}{{/logo}}
 
 {{image Background}}{{/image}}
 {{image Cart}}cart.png{{/image}}
@@ -128,6 +128,7 @@ box-shadow:1px 1px 2px {{colours.shadow}};
 .global-nav .basket:visited {color: {{colours.canvas}}; background-color: {{colours.buttons}};}
 .global-nav .basket:hover {color: {{colours.canvas}};}
 
+.quick-nav .basket {background-image: url({{images.cartIcon.fullURL}});}
 {{if booleans.disableCartImage}}
 .disable-cart-image .global-nav .basket {background-image: url({{images.cartIcon.fullURL}});}
 {{else}}

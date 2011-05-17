@@ -27,7 +27,7 @@
 {{font Headings}}helvetica, arial, sans-serif{{/font}}
 {{font Nav}}helvetica, arial, sans-serif{{/font}}
 
-{{logo Logo}}example.png{{/logo}}
+{{logo Logo}}{{/logo}}
 
 {{image Background}}{{/image}}
 {{image Banner}}{{/image}}
@@ -139,6 +139,7 @@ box-shadow:1px 1px 2px {{colours.shadow}};
 #banner {height: {{images.banner.height}}px; background-image: url({{images.banner.fullURL}});}
 {{/if}}
 
+.quick-nav .basket,
 .main-header .basket {background-image: url({{images.cartIcon.fullURL}});}
 
 /**
