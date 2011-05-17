@@ -37,6 +37,8 @@
 {{css two}}memphis-two.css{{/css}}
 {{css one}}memphis-one.css{{/css}}
 
+{{choice Thumbnail Text Align}}center|left|right{{/choice}}
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -108,6 +110,8 @@ fieldset {border-color: {{colours.canvasBorder}};}
 .main-footer nav li, {border-left-color: {{colours.footerNav}};}
 
 .main-header .basket .name {background-image: url({{images.cartIcon.fullURL}});}
+
+.product-thumbnails .product {text-align: {{choices.thumbnailTextAlign|choice-class}};}
 
 {{customCSS}}
 </style>

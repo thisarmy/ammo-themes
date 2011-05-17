@@ -41,6 +41,8 @@
 {{css two}}bar.vertical-two.css{{/css}}
 {{css narrow}}bar.vertical-narrow.css{{/css}}
 
+{{choice Thumbnail Text Align}}center|left|right{{/choice}}
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -141,6 +143,8 @@ box-shadow:1px 1px 2px {{colours.shadow}};
 
 .quick-nav .basket,
 .main-header .basket {background-image: url({{images.cartIcon.fullURL}});}
+
+.product-thumbnails .product {text-align: {{choices.thumbnailTextAlign|choice-class}};}
 
 /**
 * Custom CSS

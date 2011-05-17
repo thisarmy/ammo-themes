@@ -45,6 +45,9 @@
 {{css three}}bar.horizontal-three.css{{/css}}
 {{css four}}bar.horizontal-four.css{{/css}}
 
+{{choice Thumbnail Text Align}}center|left|right{{/choice}}
+
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -154,6 +157,9 @@ box-shadow:1px 1px 2px {{colours.shadow}};
 .button:hover, a.button:hover {color: {{colours.buttonRollover}};}
 
 .status, .errors {border-bottom-color: {{colours.meta}}; border-top-color: {{colours.meta}};}
+
+.product-thumbnails .product {text-align: {{choices.thumbnailTextAlign|choice-class}};}
+
 
 /**
 * Custom CSS
