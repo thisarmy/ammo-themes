@@ -71,8 +71,6 @@ table {margin-bottom: 0; padding-bottom: 20px;}
 .order-wrap td.amount,
 .order-wrap td.update {padding-right: 20px;}
 .order-wrap td.image {padding-right: 1em;}
-.order-wrap .fields th.quantity,
-.order-wrap .fields td.quantity {padding-left: 0;}
 
 .fieldgroup-address {margin-bottom: 0;}
 

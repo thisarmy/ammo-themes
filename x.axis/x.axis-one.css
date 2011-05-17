@@ -26,3 +26,6 @@ img {max-width: 300px; height: auto;}
 .field p.error {margin-bottom: 0;}
 #field_country *:last-child {margin-bottom: 20px;}
 
+.order-wrap .fields th.image,
+.order-wrap .fields td.image {padding-left: 0; padding-right: 0; width: 0;}
+.order-wrap .fields td.image img {display: none;}

@@ -26,3 +26,7 @@ img {max-width: 290px; height: auto;}
 .main-header .basket {margin-bottom: 15px;}
 .main-header h1.logo img {max-width: 145px; margin-right: 0;}
 .main-header .global-nav {width: 290px; overflow: hidden; padding-top: 0; margin-bottom: 0; clear: both;}
+
+.order-wrap .fields th.image,
+.order-wrap .fields td.image {padding-right: 0; width: 0;}
+.order-wrap .fields td.image img {display: none;}

@@ -18,3 +18,7 @@ img {max-width: 290px; height: auto;}
 .field input {width: 240px; float: none;}
 
 .main-footer {padding: 15px;}
+
+.order-wrap .fields th.image,
+.order-wrap .fields td.image {padding-left: 0; padding-right: 0; width: 0;}
+.order-wrap .fields td.image img {display: none;}
