@@ -35,5 +35,6 @@ img {max-width: 460px; height: auto;}
 
 .order-wrap .summary {margin-top: 10px;}
 
-.order-wrap .summary table {margin-bottom: 0; padding-bottom: 0;}
+.order-wrap .summary {position: relative; margin-bottom: 93px; padding-bottom: 0; margin-top: 10px;}
+.order-wrap .buttonwrap {position: absolute; left: 0; bottom: -93px;}
 

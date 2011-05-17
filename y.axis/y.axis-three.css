@@ -16,7 +16,7 @@ img {max-width: 715px; height: auto;}
 .main-header h1.text {margin-top: 30px;}
 .main-header h1.logo a {padding: 0;}
 .main-header h1.text a {padding: 10px 20px; line-height: 1.2;}
-.main-header .basket {margin-top: 40px; background-repeat: no-repeat; background-position: left; padding-left: 20px; display: inline-block;}
+.main-header .basket {margin-top: 40px; background-repeat: no-repeat; background-position: left; padding-left: 20px;}
 .nav-right .main-header .basket {margin-left: 20px;}
 
 .main-content,
@@ -36,10 +36,13 @@ img {max-width: 715px; height: auto;}
 .order-wrap .summary,
 .product-without-detail {position: relative;}
 
-.order-wrap .buttonwrap,
-.product-without-detail .buttonwrap {position: absolute; top: 0; margin: 0; width: 205px;}
+.order-wrap .summary {position: relative; padding-bottom: 0;}
+.order-wrap .buttonwrap {position: absolute; left: 510px; top: 0;}
+
+/*.order-wrap .buttonwrap,
+.multivariant-checkout .buttonwrap {position: absolute; top: 0; margin: 0; width: 205px;}
 .order-wrap .buttonwrap {left: 510px; margin: 0; padding-top: 0;}
-.product-without-detail .buttonwrap {left: 255px;}
+.product-without-detail .multivariant-checkout .buttonwrap {left: 255px;}*/
 
 .order-wrap .summary,
 .single-product .product-text {float: left; margin-right: 30px; margin-top: 10px; width: 460px;}

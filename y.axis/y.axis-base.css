@@ -2,9 +2,17 @@ body {text-align: left;}
 
 p {font-size: 1.2em; line-height: 1.6; margin:0 0 1.5em; padding-bottom: 1px;}
 
-.buttonwrap {margin-top: 20px; margin-left: -20px; margin-bottom: -20px; padding-top: 10px; text-align: left;}
-.button {margin: 0; text-transform: uppercase; width: 225px; padding: 20px 0; line-height: 14px; height: 14px;}
+.single-product .checkout {position: relative; margin-bottom: 73px;}
+.single-product .single-variant-checkout {margin-bottom: 0;}
+.single-product .buttonwrap {position: absolute; left: 0; bottom: -73px;}
+.single-variant-checkout .buttonwrap {position: static;}
+
+/*.order-wrap .buttonwrap,
+.product-without-detail .multivariant-checkout .buttonwrap {margin-top: 20px; margin-left: -20px; margin-bottom: -20px; padding-top: 10px; text-align: left;}*/
+.button {margin: 0; text-transform: uppercase; width: 225px; padding: 20px 0; line-height: 23px; height: 23px;}
 input.button {font-family: inherit; font-size: inherit;}
+
+.main-header .basket {display: inline-block;}
 
 .main-content {margin: 0 auto; overflow: hidden; margin-top: 20px; text-align: left;}
 .main-content h1,
@@ -13,6 +21,8 @@ input.button {font-family: inherit; font-size: inherit;}
 .main-content h4,
 .main-content p {padding-right: 20px;}
 .main-content p img.center {margin-right: -20px;}
+
+.empty-basket {padding: 20px; padding-bottom: 0; margin-bottom: -20px;}
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4 {border-bottom-style: solid; border-bottom-width: 1px; font-size: inherit; margin-bottom: 20px; padding-bottom: 20px; text-transform: uppercase;}
 
@@ -30,7 +40,10 @@ input.button {font-family: inherit; font-size: inherit;}
 
 .single-product .product-detail,
 .single-product .product-text,
-.single-product .checkout {padding: 20px 0 20px 20px;}
+.single-product .multi-variant-checkout {padding: 20px 0 20px 20px;}
+
+.single-product .product-text,
+.single-product .checkout {margin-top: 10px;}
 
 .single-product .product-text >*:last-child {margin-bottom: 0;}
 
@@ -52,20 +65,18 @@ table {margin-bottom: 0; padding-bottom: 20px;}
 .order-wrap .fields table {margin-bottom: 0; padding-bottom: 0;}
 .order-wrap .fields,
 .order-wrap .summary {padding: 20px; padding-right: 0;}
-.order-wrap .summary {padding-bottom: 0;}
 .order-wrap .fields thead th {text-transform: uppercase;}
 .order-wrap .fields tbody td {height: 36px;}
 .order-wrap .summary tr.items td {border-top: none;}
 .order-wrap .summary tr.shipping td {padding-top: 0;}
-.order-wrap .buttonwrap {margin-top: 20px;}
 .order-wrap th.amount,
 .order-wrap td.amount,
 .order-wrap td.update {padding-right: 20px;}
 .order-wrap td.image {padding-right: 1em;}
+.order-wrap .fields th.quantity,
+.order-wrap .fields td.quantity {padding-left: 0;}
 
 .fieldgroup-address {margin-bottom: 0;}
-
-div.order-wrap .buttonwrap {margin-bottom: 0;}
 
 th, td, .order-wrap .summary h1, .order-wrap .fields h1, .order-wrap .summary p {font-weight: normal; padding: 0.75em 0;}
 

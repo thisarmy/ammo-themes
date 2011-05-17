@@ -32,8 +32,11 @@ img {max-width: 300px; height: auto;}
 
 .single-product .product-images img {max-width: 460px;}
 
-.order-wrap .summary {margin-top: 10px;}
+.order-wrap .summary {position: relative; margin-bottom: 93px; padding-bottom: 0; margin-top: 10px;}
+.order-wrap .buttonwrap {position: absolute; left: 0; bottom: -93px;}
 
-.order-wrap .summary table {margin-bottom: 0; padding-bottom: 0;}
+.order-wrap .fields th.image,
+.order-wrap .fields td.image {padding-right: 0; width: 0;}
+.order-wrap .fields td.image img {display: none;}
 
 
