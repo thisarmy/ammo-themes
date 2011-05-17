@@ -7,6 +7,7 @@
 .global-nav ul,
 .global-nav li,
 .global-nav a {display: inline;}
+.global-nav a {padding: 0 10px;}
 .global-nav .basket {margin-top: 0; margin-bottom: 20px;}
 .nav-left .main-content,
 .nav-left .main-footer,
