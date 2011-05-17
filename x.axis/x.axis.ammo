@@ -244,15 +244,13 @@ jQuery(document).ready(function($) {
 
 
 {{override SingleProduct}}
-<article class="single-product">
+<article class="single-product {{if product.detail}}product-with-detail{{else}}product-without-detail{{/if}}">
     <div class="product">
         <div class="product-detail">
             <h1 class="product-name">
-                {{if product.hasMultipleVariants}}
                 <span class="product-price">
                 {{product.price|htmlprice-with-zeroes}}
                 </span>
-                {{/if}}
                 {{product.name}}
             </h1>
 
@@ -270,7 +268,7 @@ jQuery(document).ready(function($) {
         {{/if}}
     </div>
 
-    <div class="checkout">
+    <div class="checkout {{if product.hasMultipleVariants}}multi{{else}}single{{/if}}-variant-checkout">
     {{if store.enableOrders}}
         <form action="{{views.basket.permalink}}" method="post">
         {{if product.hasMultipleVariants}}
@@ -292,9 +290,6 @@ jQuery(document).ready(function($) {
                 </ul>
             </div>
         {{else}}
-            <span class="product-price">
-            {{product.price|htmlprice-with-zeroes}}
-            </span>
             <input type="hidden" name="add"
                 value="{{product.defaultVariant.identifier}}">
         {{/if}}

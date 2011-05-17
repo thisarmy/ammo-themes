@@ -6,8 +6,11 @@ p {font-size: 1.2em; line-height: 1.6; padding-bottom: 1px;}
 .quick-nav {margin-bottom: 15px;}
 
 .single-product .checkout,
-.order-wrap .summary {position: relative; margin-bottom: 74px;}
-.buttonwrap {position: absolute; left: 0; bottom: -74px;}
+.order-wrap .summary {position: relative; margin-bottom: 64px;}
+.single-product .single-variant-checkout {margin-bottom: 0;}
+.buttonwrap {position: absolute; left: 0; bottom: -64px;}
+.single-variant-checkout .buttonwrap {position: static;}
+.single-variant-checkout {width: 270px;}
 
 .button {margin: 0; text-transform: uppercase; width: 270px; padding: 20px 0; line-height: 14px; height: 14px;}
 
@@ -30,7 +33,6 @@ input.button {font-family: inherit; font-size: inherit;}
 .global-nav a.basket {padding-right: 0; background-repeat: no-repeat; background-position: 15px center; padding-left: 40px;}
 
 .global-nav ul li {display: inline-block;}
-
 
 .ie img {-ms-interpolation-mode: bicubic;}
 .ie #spacer {display: none;}
@@ -68,8 +70,10 @@ input.button {font-family: inherit; font-size: inherit;}
 
 .single-product .product-detail,
 .single-product .product-text,
-.single-product .checkout {padding: 20px 0 20px 20px;}
+.single-product .multi-variant-checkout {padding: 20px 0 20px 20px;}
 .single-product .product-detail {margin-bottom: 10px;}
+
+.single-product .product-text > *:last-child {margin-bottom: 0;}
 
 .single-product h1 .product-price {float: right;}
 .single-product .product-price {display: block; line-height: normal;}
