@@ -1,0 +1,19 @@
+.canvas {width: 510px;}
+
+img {max-width: 450px; height: auto;}
+
+.main-header h1 {text-align: center;}
+.main-header .basket {display: block; text-align: center;}
+
+.product-thumbnails .m2 {margin-right: 0;}
+.product-thumbnails .m2n {clear: both;}
+
+.single-product .product-images {margin-bottom: 1.5em;}
+.single-product .product-images ul {margin: 0 auto; width: 420px;}
+.single-product .product-images img {max-width: 420px;}
+.pagination {text-align: center;}
+
+.field {margin-bottom: 1em;}
+.field label {display: block; float: none; text-align: left; margin-bottom: 0;}
+.field select {width: 415px; float: none;}
+.field input {width: 400px; float: none;}

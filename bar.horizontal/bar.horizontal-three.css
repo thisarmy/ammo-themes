@@ -1,0 +1,21 @@
+.canvas {width: 750px; padding-top: 15px;}
+
+img {max-width: 690px; height: auto;}
+
+.product-thumbnails .m3 {margin-right: 0;}
+.product-thumbnails .m3n {clear: both;}
+
+.product-images img {max-width: 330px;}
+
+.single-product .product-images,
+.order-wrap .fields {float: left; width: 330px;}
+.single-product .product-detail,
+.order-wrap .summary {float: right; width: 330px;}
+
+.global-nav ul a {padding: 15px 8px;}
+
+.field {margin-bottom: 1em;}
+.field label {display: block; float: none; text-align: left; margin-bottom: 0;}
+.field select {width: 295px; float: none;}
+.field input {width: 280px; float: none;}
+

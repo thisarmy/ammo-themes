@@ -1,0 +1,85 @@
+body {text-align: left;}
+
+p {font-size: 1.2em; line-height: 1.6; margin:0 0 1.5em; padding-bottom: 1px;}
+
+.buttonwrap {margin-top: 20px; margin-left: -20px; margin-bottom: -20px; padding-top: 10px; text-align: left;}
+.button {margin: 0; text-transform: uppercase; width: 225px; padding: 20px 0; line-height: 14px; height: 14px;}
+input.button {font-family: inherit; font-size: inherit;}
+
+.main-content {margin: 0 auto; overflow: hidden; margin-top: 20px; text-align: left;}
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content p {padding-right: 20px;}
+.main-content p img.center {margin-right: -20px;}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4 {border-bottom-style: solid; border-bottom-width: 1px; font-size: inherit; margin-bottom: 20px; padding-bottom: 20px; text-transform: uppercase;}
+
+.page-or-view .main-content {padding: 20px; padding-right: 0;}
+.basket-order-or-track .main-content {padding: 0;}
+
+.page-or-view .product-thumbnails {margin-left: -20px;}
+
+.product-thumbnails .product-meta {text-align: left;}
+.product-thumbnails .product-listing p:last-child {margin-bottom: 0;}
+.product-thumbnails h1,
+.product-thumbnails h2 {border-bottom: none;}
+
+.pagination {margin-top: 20px;}
+
+.single-product .product-detail,
+.single-product .product-text,
+.single-product .checkout {padding: 20px 0 20px 20px;}
+
+.single-product .product-text >*:last-child {margin-bottom: 0;}
+
+.single-product h1 .product-price {float: right;}
+.single-product .product-price {display: block; line-height: normal;}
+
+.product-variants {text-align: left;}
+.product-variants ul {margin-bottom: 20px; margin: 0; padding: 0;}
+.product-variants li {display: block; list-style-type: none; margin: 0; padding: 0;}
+.product-variants label {font-weight: normal;}
+
+.main-footer {margin: 0 auto; overflow: hidden; padding: 20px; text-align: left;}
+.main-footer .utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px;}
+.main-footer .utility-nav li {display: inline;}
+.main-footer .utility-nav a {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+
+table {margin-bottom: 0; padding-bottom: 20px;}
+.order-wrap {overflow: hidden; width: 100%;}
+.order-wrap .fields table {margin-bottom: 0; padding-bottom: 0;}
+.order-wrap .fields,
+.order-wrap .summary {padding: 20px; padding-right: 0;}
+.order-wrap .summary {padding-bottom: 0;}
+.order-wrap .fields thead th {text-transform: uppercase;}
+.order-wrap .fields tbody td {height: 36px;}
+.order-wrap .summary tr.items td {border-top: none;}
+.order-wrap .summary tr.shipping td {padding-top: 0;}
+.order-wrap .buttonwrap {margin-top: 20px;}
+.order-wrap th.amount,
+.order-wrap td.amount,
+.order-wrap td.update {padding-right: 20px;}
+.order-wrap td.image {padding-right: 1em;}
+
+.fieldgroup-address {margin-bottom: 0;}
+
+div.order-wrap .buttonwrap {margin-bottom: 0;}
+
+th, td, .order-wrap .summary h1, .order-wrap .fields h1, .order-wrap .summary p {font-weight: normal; padding: 0.75em 0;}
+
+.order-wrap th,
+.order-wrap .fields h1,
+.order-wrap .summary h1 {padding-top: 0; padding-bottom: 20px; line-height: 1.2;}
+
+.order-wrap .fields .errors {border-top: none; padding-top: 0; padding-bottom: 20px; border-bottom: none;}
+.order-wrap .summary .status {border-top: none; border-bottom: none; margin-bottom: 0;}
+
+fieldset {border: none; margin-top: 34px; position: relative; padding: 20px; padding-bottom: 0; padding-left: 0; clear: both;}
+fieldset + fieldset {margin-top: 74px;}
+.track-view fieldset {padding-right: 0; margin-top: 54px;}
+legend {font-weight: normal; position: absolute; top: -34px; left: 0; text-transform: uppercase; font-size: inherit; display: block; width: 100%; border-bottom-width: 1px; border-bottom-style: solid; padding-bottom: 20px; line-height: 14px; height: 14px;}
+
+
+.pagination {text-align: left;}

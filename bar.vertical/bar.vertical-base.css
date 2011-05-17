@@ -1,0 +1,30 @@
+img {max-width: 630px; height: auto;}
+
+.canvas {margin: 0 auto; text-align: left;}
+
+.main-header {margin-top: 75px; padding: 15px; position: relative;}
+.main-header h1 {margin: 0; padding: 0; text-align: center;}
+.main-header h1.text {font-size: 12px; line-height: 1.5em; padding: 15px 0;}
+.main-header h1.text a,
+.main-header h1.text a:hover {text-decoration: none;}
+.global-nav a,
+.main-header .basket {display: block; text-decoration: none; font-size: 12px; line-height: 15px; text-transform: uppercase; padding: 15px;}
+.global-nav {margin-top: 15px;}
+.main-header .basket {position: absolute; top: -60px; left: 0; right: 0; padding: 15px 30px; padding-left: 40px; background-repeat: no-repeat; background-position: 15px center;}
+
+.main-content {margin-top: 15px;}
+
+.pagination {text-align: left;}
+
+.products-view .main-content,
+.range-permalink .main-content {padding-bottom: 12px;}
+
+.product-thumbnails .product-listing p {font-size: 1em;}
+
+.main-footer {overflow: hidden; text-align: left; padding: 30px; clear: both;}
+.utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px; text-align: right;}
+.utility-nav ul {display: inline-block;}
+.utility-nav li {display: inline;}
+.utility-nav a {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+
+.ie img {-ms-interpolation-mode: bicubic;}

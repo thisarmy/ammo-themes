@@ -1,0 +1,21 @@
+.canvas,
+.main-footer {width: 640px;}
+
+.main-header a {padding: 15px 8px;}
+
+.product-thumbnails .product {width: 290px; float: left; padding-top: 15px; border-top-width: 5px; border-top-style: solid; margin-bottom: 30px;}
+.product-thumbnails .product:nth-child(even) {margin-left: 30px;}
+.product-thumbnails .product:nth-child(odd) {clear: both;}
+
+.single-product .product-images,
+.order-wrap .fields {margin-bottom: 30px;}
+
+.single-product .product-detail {padding-top: 30px;}
+
+/*.main-header h1.logo {margin-right: 15px;}
+.main-header .global-nav {float: none; text-align: right;}
+.main-header .global-nav ul {text-align: right;}*/
+
+.main-header .basket {margin-bottom: 15px;}
+.main-header h1.logo img {max-width: 290px; margin-right: 0;}
+.main-header .global-nav {width: 610px; overflow: hidden; padding-top: 0; margin-bottom: 0; clear: both;}

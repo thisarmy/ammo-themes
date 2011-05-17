@@ -1,0 +1,13 @@
+.canvas {width: 990px;}
+
+.main-header {float: left; width: 255px;}
+.main-header img {max-width: 255px;}
+
+.main-content {float: right; padding: 30px; width: 630px;}
+
+.product-thumbnails .product {float: left; margin-right: 30px; width: 300px;}
+.product-thumbnails .product img {width: 300px;}
+.product-thumbnails .m2 {margin-right: 0;}
+.product-thumbnails .m2n {clear: both;}
+
+.single-product .product-images img {max-width: 630px;}

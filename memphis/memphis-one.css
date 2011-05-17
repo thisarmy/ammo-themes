@@ -1,0 +1,28 @@
+img {max-width: 290px; height: auto;}
+
+.canvas, .main-footer {width: 320px;}
+
+.main-header a {padding: 15px 8px;}
+
+.product-thumbnails .product {padding-top: 15px; border-top-width: 5px; border-top-style: solid; margin-bottom: 30px;}
+
+.single-product .product-images,
+.order-wrap .fields {margin-bottom: 30px;}
+
+.single-product .product-detail {padding-top: 30px;}
+
+
+.field label {display: block; float: none; text-align: left;}
+.field input {width: 235px;}
+.field select {width: 250px;}
+
+.field label {margin-bottom: 0;}
+.field + .field {padding-top: 1em;}
+.field p.error {margin-bottom: 0;}
+#field_country *:last-child {margin-bottom: 20px;}
+
+/*.main-header .basket {float: none; position: absolute; top: 0; right: 15px;}*/
+
+.main-header .basket {margin-bottom: 15px;}
+.main-header h1.logo img {max-width: 145px; margin-right: 0;}
+.main-header .global-nav {width: 290px; overflow: hidden; padding-top: 0; margin-bottom: 0; clear: both;}

@@ -1,0 +1,43 @@
+.canvas {margin: 0 auto; text-align: left; margin-bottom: 15px; border-width: 15px; border-style: solid;}
+
+.main-header {position: relative; padding: 0 15px}
+.main-header a, .main-header .basket {text-decoration: none; font-size: 12px; line-height: 15px; font-weight: bold; text-transform: uppercase; float: left; padding: 15px;}
+.main-header .basket {float: right; padding-top: 0;}
+.main-header .basket .name {text-indent: -10000px; background-repeat: no-repeat; background-position: center;}
+.main-header .basket .items {font-weight: normal; font-size: 9px; line-height: 12px; padding: 15px 0; text-align: center;}
+.main-header .basket .items .num {font-size: 12px; line-height: 15px; display: block;}
+.main-header .global-nav {float: right; padding-top: 42px; margin-bottom: 27px;}
+.main-header .global-nav li {display: inline;}
+.main-header .global-nav a {}
+.main-header h1.logo {float: left; margin: 0; padding-top: 15px;}
+.main-header h1.logo a {float: none;}
+.main-header h1.logo img {display: block;}
+.main-header h1.text {position: absolute; top: 42px; left: -15px; margin: 0;}
+.main-header h1.text a {padding: 15px 30px;}
+
+.main-content {clear: both; padding: 15px;}
+.range-permalink .main-content,
+.products-view .main-content {padding-bottom: 0;}
+
+.buttonwrap {padding: 5px 15px; font-size: 12px; line-height: 15px; font-weight: bold; text-transform: uppercase; overflow: hidden;}
+.button {padding: 10px 15px; border: none; cursor: pointer; font-size: 14px; border: 1px solid rgba(0, 0, 0, 0.3); text-decoration: none;}
+.buttonwrap .button {margin-left: 15px; border-left: none; border-top: none; border-right: none; font-weight: normal; text-transform: none; display: inline-block;}
+
+.pagination {text-align: left;}
+
+.single-product .product-images,
+.single-product .product-detail,
+.order-wrap .fields,
+.order-wrap .summary {border-top-width: 5px; border-top-style: solid; padding-top: 15px;}
+
+.single-product .product-name {font-size: 2em; margin-bottom:0.75em;}
+
+.main-footer {overflow: hidden; margin: 0 auto; text-align: left;}
+.main-footer .utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px;}
+.main-footer .utility-nav ul {margin: 0; padding: 0; list-style-type: none;}
+.main-footer .utility-nav li {display: inline;}
+.main-footer .utility-nav a {text-decoration: none; font-size: 12px; line-height: 15px; font-weight: bold; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+
+.order-wrap .errors {padding-top: 0; border-top-width: 0; border-top-style: none; text-align: center;}
+
+.ie img {-ms-interpolation-mode: bicubic;}

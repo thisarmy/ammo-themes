@@ -1,0 +1,14 @@
+.nav-left .main-header,
+.nav-right .main-header {position: static; width: auto; text-align: center; margin-bottom: 20px; overflow: hidden;}
+.nav-left .main-header h1.logo {margin-right: 0;}
+.nav-left h1.logo img {float: none; max-width: 735px;}
+.main-header h1.text {margin-top: 20px;}
+.main-header h1.text a {padding: 0;}
+.global-nav ul,
+.global-nav li,
+.global-nav a {display: inline;}
+.global-nav .basket {margin-top: 0; margin-bottom: 20px;}
+.nav-left .main-content,
+.nav-left .main-footer,
+.nav-right .main-content,
+.nav-right .main-footer {float: none; margin: 0 auto; width: 735px; }
