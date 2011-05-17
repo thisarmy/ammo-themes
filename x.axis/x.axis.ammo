@@ -123,6 +123,7 @@ hr, fieldset, fieldset legend,
 .pagination {color: {{colours.headings}};}
 
 .page-or-view .main-content,
+.basket-order-or-track .empty-basket,
 .single-product .product-detail,
 .single-product .product-text,
 .single-product .checkout,

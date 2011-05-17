@@ -61,6 +61,8 @@ input.button {font-family: inherit; font-size: inherit;}
 .page-or-view .main-content {padding: 20px; padding-right: 0;}
 .basket-order-or-track .main-content {padding: 0;}
 
+.empty-basket {padding: 20px; padding-bottom: 0; margin-bottom: -20px;}
+
 .page-or-view .product-thumbnails {margin-left: -20px;}
 
 .product-thumbnails .product-meta {text-align: left;}
