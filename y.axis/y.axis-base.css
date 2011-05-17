@@ -7,8 +7,6 @@ p {font-size: 1.2em; line-height: 1.6; margin:0 0 1.5em; padding-bottom: 1px;}
 .single-product .buttonwrap {position: absolute; left: 0; bottom: -73px;}
 .single-variant-checkout .buttonwrap {position: static;}
 
-/*.order-wrap .buttonwrap,
-.product-without-detail .multivariant-checkout .buttonwrap {margin-top: 20px; margin-left: -20px; margin-bottom: -20px; padding-top: 10px; text-align: left;}*/
 .button {margin: 0; text-transform: uppercase; width: 225px; padding: 20px 0; line-height: 23px; height: 23px;}
 input.button {font-family: inherit; font-size: inherit;}
 

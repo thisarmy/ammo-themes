@@ -38,11 +38,8 @@ img {max-width: 715px; height: auto;}
 
 .order-wrap .summary {position: relative; padding-bottom: 0;}
 .order-wrap .buttonwrap {position: absolute; left: 510px; top: 0;}
-
-/*.order-wrap .buttonwrap,
-.multivariant-checkout .buttonwrap {position: absolute; top: 0; margin: 0; width: 205px;}
-.order-wrap .buttonwrap {left: 510px; margin: 0; padding-top: 0;}
-.product-without-detail .multivariant-checkout .buttonwrap {left: 255px;}*/
+/*.product-without-detail .multi-variant-checkout .buttonwrap {bottom: auto; top: 0; left: 255px;}*/
+.single-product .product-without-detail .multi-variant-checkout {float: none; width: auto;}
 
 .order-wrap .summary,
 .single-product .product-text {float: left; margin-right: 30px; margin-top: 10px; width: 460px;}
