@@ -230,7 +230,6 @@ $(document).ready(function() {
             <span class="num">{{basket.totalItems}}</span>
             item{{basket.totalItems|plural}}
             </div>
-            <div class="name">{{views.basket.name}}</div>
         </a>
         {{/if}}
     </nav>

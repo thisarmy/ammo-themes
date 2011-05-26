@@ -25,10 +25,8 @@
 .enable-cart-image .global-nav a {display: inline-block;}
 .enable-cart-image .main-header .basket {padding: 0; display: inline-block; text-align: center; float: right; text-decoration: none; display: inline-block; margin-left: 15px;}
 .enable-cart-image .main-header .basket .items {margin-top: 1.25em;}
-.enable-cart-image .main-header .basket .name {text-transform: uppercase;}
 
 .disable-cart-image .main-header .basket {background-repeat: no-repeat; background-position: left; padding-left: 40px; background-position: 15px center}
-.disable-cart-image .main-header .basket .name {display: none;}
 
 .ie img {-ms-interpolation-mode: bicubic;}
 .ie .main-header h1 {float: left; display: block;}
