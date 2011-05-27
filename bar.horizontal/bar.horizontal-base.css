@@ -3,7 +3,7 @@
 
 .quick-nav {margin-bottom: 15px;}
 
-.main-header {overflow: hidden; width: 100%; display: table; text-align: center;}
+.main-header {overflow: visible; width: 100%; display: table; text-align: center;}
 
 .main-header h1 {margin: 0; padding: 30px; display: table-cell; vertical-align: middle; text-align: left;}
 .main-header img {margin: 0 auto;}
@@ -23,10 +23,10 @@
 
 .enable-cart-image .global-nav {padding-right: 30px;}
 .enable-cart-image .global-nav a {display: inline-block;}
-.enable-cart-image .main-header .basket {padding: 0; display: inline-block; text-align: center; float: right; text-decoration: none; display: inline-block; margin-left: 15px;}
-.enable-cart-image .main-header .basket .items {margin-top: 1.25em;}
+.enable-cart-image .main-header .basket {padding: 0; display: inline-block; text-align: center; float: right; text-decoration: none; display: inline-block; margin-left: 15px; text-transform: uppercase;}
+.enable-cart-image .main-header .basket .items {}
 
-.disable-cart-image .main-header .basket {background-repeat: no-repeat; background-position: left; padding-left: 40px; background-position: 15px center}
+.disable-cart-image .main-header .basket {background-repeat: no-repeat; background-position: left; padding-left: 40px; background-position: 15px center; font-size: 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; margin-right: -10px; margin-left: 15px;}
 
 .ie img {-ms-interpolation-mode: bicubic;}
 .ie .main-header h1 {float: left; display: block;}
@@ -51,3 +51,7 @@
 .utility-nav li {display: inline;}
 .utility-nav a {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
 
+.empty-basket p:last-child {margin-bottom: 0;}
+
+.disable-buy-image input.add, input.checkout, input.order {font-size: 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; text-transform: uppercase; padding: 15px;}
+.disable-buy-image input.add {padding-left: 40px; background-repeat: no-repeat; background-position: 15px center;}

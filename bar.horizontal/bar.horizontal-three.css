@@ -13,6 +13,7 @@ img {max-width: 690px; height: auto;}
 .order-wrap .summary {float: right; width: 330px;}
 
 .global-nav ul a {padding: 15px 8px;}
+.disable-cart-image .main-header .basket {margin-left: 8px;}
 
 .field {margin-bottom: 1em;}
 .field label {display: block; float: none; text-align: left; margin-bottom: 0;}

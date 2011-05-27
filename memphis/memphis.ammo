@@ -37,7 +37,7 @@
 {{css two}}memphis-two.css{{/css}}
 {{css one}}memphis-one.css{{/css}}
 
-{{choice Thumbnail Text Align}}center|left|right{{/choice}}
+{{choice Thumbnail Text Align}}left|center|right{{/choice}}
 
 <!DOCTYPE HTML>
 <html>

@@ -30,14 +30,11 @@
 {{logo Logo}}{{/logo}}
 
 {{image Background}}{{/image}}
-{{image Cart}}cart.png{{/image}}
-{{image Buy}}buy.png{{/image}}
+{{image Cart}}{{/image}}
+{{image Buy}}{{/image}}
 {{image Cart Icon}}carticon.png{{/image}}
 {{image Apple Touch Icon}}{{/image}}
 {{image Favicon}}{{/image}}
-
-{{boolean Disable Cart Image}}false{{/boolean}}
-{{boolean Disable Buy Image}}false{{/boolean}}
 
 {{css base}}bar.horizontal-base.css{{/css}}
 {{css one}}bar.horizontal-one.css{{/css}}
@@ -45,7 +42,7 @@
 {{css three}}bar.horizontal-three.css{{/css}}
 {{css four}}bar.horizontal-four.css{{/css}}
 
-{{choice Thumbnail Text Align}}center|left|right{{/choice}}
+{{choice Thumbnail Text Align}}left|center|right{{/choice}}
 
 
 <!DOCTYPE HTML>
@@ -121,6 +118,12 @@ background-color: {{colours.canvas}};
 -moz-box-shadow:1px 1px 2px {{colours.shadow}};
 box-shadow:1px 1px 2px {{colours.shadow}};
 }
+.disable-cart-image .main-header .basket,
+.disable-buy-image input.add, input.checkout, input.order {
+-webkit-box-shadow: 1px 2px 2px {{colours.shadow}};
+-moz-box-shadow: 1px 2px 2px {{colours.shadow}};
+box-shadow: 1px 2px 2px {{colours.shadow}};
+}
 
 .main-header h1.text {font-family: {{fonts.logo}};}
 .main-header h1.text a, .main-header h1.text a:visited,
@@ -132,8 +135,9 @@ box-shadow:1px 1px 2px {{colours.shadow}};
 .global-nav .basket:hover {color: {{colours.canvas}};}
 
 .quick-nav .basket {background-image: url({{images.cartIcon.fullURL}});}
-{{if booleans.disableCartImage}}
-.disable-cart-image .global-nav .basket {background-image: url({{images.cartIcon.fullURL}});}
+{{if not images.cart }}
+.disable-cart-image .global-nav .basket,
+.disable-buy-image input.add {background-image: url({{images.cartIcon.fullURL}});}
 {{else}}
 .enable-cart-image .global-nav .basket {background-image: url({{images.cart.fullURL}});}
 .enable-cart-image .global-nav .basket,
@@ -141,7 +145,7 @@ box-shadow:1px 1px 2px {{colours.shadow}};
 .enable-cart-image .global-nav .basket:hover {color: {{colours.canvas}};}
 .enable-cart-image .global-nav ul {line-height: {{images.cart.height}}px;}
 /*.enable-cart-image .global-nav li {line-height: {{images.cart.height}}px;}*/
-.enable-cart-image .global-nav .basket {width: {{images.cart.width}}px; height: {{images.cart.height}}px;}
+.enable-cart-image .global-nav .basket {width: {{images.cart.width}}px; height: {{images.cart.height}}px; line-height: {{images.cart.height}}px;}
 {{/if}}
 
 /* footer */
@@ -202,7 +206,7 @@ $(document).ready(function() {
 {{store.headerCode}}
 </head>
 
-<body class="{{bodyClasses}} {{if booleans.disableCartImage}}disable-cart-image{{else}}enable-cart-image{{/if}} {{if booleans.disableBuyImage}}disable-buy-image{{else}}enable-buy-image{{/if}}">
+<body class="{{bodyClasses}} {{if not images.cart}}disable-cart-image{{else}}enable-cart-image{{/if}} {{if not images.buy}}disable-buy-image{{else}}enable-buy-image{{/if}}">
 
 <section class="canvas quicknav-prepend">
 <header class="main-header">

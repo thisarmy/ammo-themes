@@ -41,7 +41,7 @@
 {{css two}}bar.vertical-two.css{{/css}}
 {{css narrow}}bar.vertical-narrow.css{{/css}}
 
-{{choice Thumbnail Text Align}}center|left|right{{/choice}}
+{{choice Thumbnail Text Align}}left|center|right{{/choice}}
 
 <!DOCTYPE HTML>
 <html>
@@ -116,6 +116,12 @@ background-color: {{colours.canvas}};
 -moz-box-shadow:1px 1px 2px {{colours.shadow}};
 box-shadow:1px 1px 2px {{colours.shadow}};
 }
+.main-header .basket,
+.disable-buy-image input.add, input.checkout, input.order {
+-webkit-box-shadow: 1px 2px 2px {{colours.shadow}};
+-moz-box-shadow: 1px 2px 2px {{colours.shadow}};
+box-shadow: 1px 2px 2px {{colours.shadow}};
+}
 
 .main-header h1.text {font-family: {{fonts.logo}};}
 .main-header h1.text a, .main-header h1.text a:visited,
@@ -142,7 +148,8 @@ box-shadow:1px 1px 2px {{colours.shadow}};
 {{/if}}
 
 .quick-nav .basket,
-.main-header .basket {background-image: url({{images.cartIcon.fullURL}});}
+.main-header .basket,
+input.add {background-image: url({{images.cartIcon.fullURL}});}
 
 .product-thumbnails .product {text-align: {{choices.thumbnailTextAlign|choice-class}};}
 
@@ -184,7 +191,7 @@ $(document).ready(function() {
 {{store.headerCode}}
 </head>
 
-<body class="{{bodyClasses}}">
+<body class="{{bodyClasses}} {{if not images.buy}}disable-buy-image{{else}}enable-buy-image{{/if}}">
 
 <section class="canvas quicknav-prepend">
 
