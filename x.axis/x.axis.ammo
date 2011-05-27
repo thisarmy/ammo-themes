@@ -165,16 +165,19 @@ jQuery(document).ready(function($) {
         $('body').removeClass('page-or-view');
     }
 
-    // make sure the second "table column" expands to take up all the space
-    $('.main-header h1.text').width($('.main-header h1 a').outerWidth());
-
     if ($.browser.msie) {
         if (parseInt($.browser.version, 10) < 9) {
             $('body').addClass('ie');
             // help max-width and max-height in ie8
             $('img').removeAttr('width');
             $('img').removeAttr('height');
+        } else {
+            // make sure the second "table column" expands to take up all the space
+            $('.main-header h1.text').width($('.main-header h1 a').outerWidth());
         }
+    } else {
+        // make sure the second "table column" expands to take up all the space
+        $('.main-header h1.text').width($('.main-header h1 a').outerWidth());
     }
 
     $.setupResizeThreshold([480, 735, 990]);

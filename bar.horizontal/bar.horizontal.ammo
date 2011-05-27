@@ -180,15 +180,17 @@ box-shadow: 1px 2px 2px {{colours.shadow}};
 
 <script>
 $(document).ready(function() {
-    $('.main-header h1.text').width($('.main-header h1 a').outerWidth());
-
     if ($.browser.msie) {
         if (parseInt($.browser.version, 10) < 9) {
             $('body').addClass('ie');
             // help max-width and max-height in ie8
             $('img').removeAttr('width');
             $('img').removeAttr('height');
+        } else {
+            $('.main-header h1.text').width($('.main-header h1 a').outerWidth());
         }
+    } else {
+        $('.main-header h1.text').width($('.main-header h1 a').outerWidth());
     }
 
     $.setupResizeThreshold([510, 750, 990]);

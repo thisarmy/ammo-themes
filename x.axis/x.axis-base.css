@@ -43,7 +43,7 @@ input.button {font-family: inherit; font-size: inherit;}
 
 .ie .main-header .global-nav ul,
 .ie .main-header .global-nav li,
-.ie .main-header .global-nav .basket {float: none; display: inline;}
+.ie .main-header .global-nav .basket {float: none; display: inline; background-image: none;}
 .ie .main-header .global-nav a {float: none; padding: 0; margin-left: 15px;}
 .ie .main-header .global-nav .basket .items {display: inline;}
 .ie .button {height: auto;}
@@ -61,7 +61,7 @@ input.button {font-family: inherit; font-size: inherit;}
 .page-or-view .main-content {padding: 20px; padding-right: 0;}
 .basket-order-or-track .main-content {padding: 0;}
 
-.empty-basket {padding: 20px; padding-bottom: 0; margin-bottom: -20px;}
+.empty-basket {padding: 20px; margin-bottom: -20px;}
 
 .page-or-view .product-thumbnails {margin-left: -20px;}
 
