@@ -2,7 +2,7 @@
 
 img {max-width: 450px; height: auto;}
 
-.main-header h1 {text-align: center;}
+.main-header h1 {text-align: center; padding: 30px 0;}
 .main-header .basket {display: block; text-align: center;}
 
 .product-thumbnails .m2 {margin-right: 0;}
