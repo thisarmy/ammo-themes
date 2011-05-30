@@ -158,6 +158,7 @@ box-shadow: 1px 2px 2px {{colours.shadow}};
 
 .button {background-color: {{colours.buttons}}; color: {{colours.buttonText}};}
 .button, a.button, a.button:visited, a.button:focus {color: {{colours.buttonText}};}
+.disable-cart-image .global-nav .basket:hover,
 .button:hover, a.button:hover {color: {{colours.buttonRollover}};}
 
 .status, .errors {border-bottom-color: {{colours.meta}}; border-top-color: {{colours.meta}};}
