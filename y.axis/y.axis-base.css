@@ -80,6 +80,7 @@ th, td, .order-wrap .summary h1, .order-wrap .fields h1, .order-wrap .summary p 
 .order-wrap .fields h1,
 .order-wrap .summary h1 {padding-top: 0; padding-bottom: 20px; line-height: 1.2;}
 
+.order-wrap .fields h1 {border-bottom: none; line-height: 1.8; padding-bottom: 1em;}
 .order-wrap .fields .errors {border-top: none; padding-top: 0; padding-bottom: 20px; border-bottom: none;}
 .order-wrap .summary .status {border-top: none; border-bottom: none; margin-bottom: 0;}
 
