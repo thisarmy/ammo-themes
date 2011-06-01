@@ -160,8 +160,8 @@ h1.logo {width: {{logos.logo.width}}px;}
 
 <script>
 jQuery(document).ready(function($) {
-    if ($('.main-content > .product-thumbnails:only-child').length) {
-        // fix the corner-case where a page contains only the AllProducts widget
+    if ($('.main-content > .product-thumbnails:only-child,.main-content > .product-groups:only-child').length) {
+        // fix the corner-case where a page contains only the AllProducts or GroupedProducts widget
         $('body').removeClass('page-or-view');
     }
 
