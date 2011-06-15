@@ -15,11 +15,11 @@ img {max-width: 290px; height: auto;}
 .field label {display: block; float: none; text-align: left;}
 .field input {width: 235px;}
 .field select {width: 250px;}
+textarea {width: 235px;}
 
 .field label {margin-bottom: 0;}
 .field + .field {padding-top: 1em;}
 .field p.error {margin-bottom: 0;}
-#field_country *:last-child {margin-bottom: 20px;}
 
 /*.main-header .basket {float: none; position: absolute; top: 0; right: 15px;}*/
 

@@ -19,4 +19,4 @@ img {max-width: 690px; height: auto;}
 .field label {display: block; float: none; text-align: left; margin-bottom: 0;}
 .field select {width: 295px; float: none;}
 .field input {width: 280px; float: none;}
-
+textarea {width: 280px;}

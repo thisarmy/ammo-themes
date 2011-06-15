@@ -46,3 +46,4 @@ img {max-width: 715px; height: auto;}
 .single-product .checkout {float: left; margin-top: 10px; width: 205px;}
 
 .field label {width: 180px;}
+textarea {width: 500px; margin: 0 auto; display: block;}

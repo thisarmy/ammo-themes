@@ -24,3 +24,4 @@ img {max-width: 715px; height: auto;}
 
 .field input {width: 235px;}
 .field select {width: 250px;}
+textarea {width: 360px; margin: 0 auto; display: block; margin-bottom: 20px;}

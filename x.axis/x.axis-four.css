@@ -1,5 +1,8 @@
 img {max-width: 970px; height: auto;}
 
+.fieldgroup-message {padding-bottom: 20px;}
+textarea {margin: 0 auto; display: block;}
+
 .middle {width: 990px;}
 .main-content {width: 990px;}
 .page-or-view .main-content {width: 970px;}

@@ -19,6 +19,7 @@ img {max-width: 300px; height: auto;}
 .field label {display: block; float: none; text-align: left;}
 .field input {width: 265px;}
 .field select {width: 280px;}
+textarea {width: 265px;}
 
 .product-thumbnails .product {margin-bottom: 10px; padding: 20px; padding-right: 0; width: 300px;}
 .product-thumbnails .product img {max-width: 300px;}
@@ -28,7 +29,6 @@ img {max-width: 300px; height: auto;}
 .field label {margin-bottom: 0;}
 .field + .field {padding-top: 1em;}
 .field p.error {margin-bottom: 0;}
-#field_country *:last-child {margin-bottom: 20px;}
 
 .single-product .product-images img {max-width: 460px;}
 
