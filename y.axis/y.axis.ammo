@@ -98,6 +98,7 @@ a:focus, a:hover {color: {{colours.canvasLinksRollover}};}
 
 .main-header {background-color: {{colours.navBackground}};}
 .main-header h1.text {font-family: {{fonts.logo}};}
+.main-header li,
 .main-header a, nav a,
 .main-header a:active, nav a:active,
 .main-header a:focus, nav a:focus,

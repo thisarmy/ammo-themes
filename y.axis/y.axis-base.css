@@ -54,9 +54,17 @@ input.button {font-family: inherit; font-size: inherit;}
 .product-variants label {font-weight: normal;}
 
 .main-footer {margin: 0 auto; overflow: hidden; padding: 20px; text-align: left;}
-.main-footer .utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px;}
-.main-footer .utility-nav li {display: inline;}
-.main-footer .utility-nav a {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+.utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px;}
+.utility-nav li {display: inline-block; vertical-align: top;}
+.utility-nav a,
+.utility-nav .grouping {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+.utility-nav .grouping {float: none; display: block;}
+.utility-nav li ul,
+.utility-nav li li {display: block;}
+.utility-nav li li a {float: none; display: block;}
+
+.ie .main-footer .utility-nav li {float: left;}
+.ie .main-footer .utility-nav li li {float: none;}
 
 table {margin-bottom: 0; padding-bottom: 20px;}
 .order-wrap {overflow: hidden; width: 100%;}

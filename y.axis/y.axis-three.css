@@ -5,7 +5,9 @@ img {max-width: 715px; height: auto;}
 .nav-left .main-header {left: 0; width: 235px; text-align: right;}
 .nav-right .main-header {left: 755px; width: auto; right: 0; text-align: left;}
 
-.main-header a {padding: 4px 20px; line-height: 1.5em; text-decoration: none; text-transform: uppercase; display: block;}
+.main-header a,
+.main-header .grouping {padding: 4px 20px; line-height: 1.5em; text-decoration: none; text-transform: uppercase; display: block;}
+.main-header .global-nav ul ul {margin-bottom: 20px;}
 
 .main-header h1 {font-size: inherit; margin: 0; margin: 20px 0;}
 .nav-left .main-header h1.logo {margin-right: 20px;}
