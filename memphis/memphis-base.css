@@ -44,7 +44,6 @@
 .main-footer .utility-nav li {display: inline-block; vertical-align: top;}
 .main-footer .utility-nav a,
 .main-footer .utility-nav .grouping {text-decoration: none; font-size: 12px; line-height: 15px; font-weight: bold; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
-
 .main-footer .utility-nav .grouping {float: none; display: block;}
 .main-footer .utility-nav li ul,
 .main-footer .utility-nav li li {display: block;}
