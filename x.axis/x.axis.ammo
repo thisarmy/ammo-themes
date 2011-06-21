@@ -98,6 +98,7 @@ a:focus, a:hover {color: {{colours.canvasLinksRollover}};}
 
 .main-header {background-color: {{colours.navBackground}};}
 .main-header h1.text {font-family: {{fonts.logo}};}
+.main-header .grouping,
 .main-header a, nav a,
 .main-header a:active, nav a:active,
 .main-header a:focus, nav a:focus,
@@ -179,6 +180,10 @@ jQuery(document).ready(function($) {
         // make sure the second "table column" expands to take up all the space
         $('.main-header h1.text').width($('.main-header h1 a').outerWidth());
     }
+
+    $('#spacer')
+        .height($('.main-header').height())
+        .css('padding', 0);
 
     $.setupResizeThreshold([480, 735, 990]);
 

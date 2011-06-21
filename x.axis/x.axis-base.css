@@ -21,6 +21,7 @@ input.button {font-family: inherit; font-size: inherit;}
 .middle {margin: 0 auto; overflow: hidden; display: table;}
 
 .main-header h1 {display: table-cell; font-size: inherit; margin: 0; text-align: left; vertical-align: middle; padding: 15px; padding-left: 20px; overflow: hidden;}
+.main-header h1.text {vertical-align: top;}
 .main-header h1 a {display: inline-block;}
 .main-header h1 img {float: left;}
 
@@ -29,24 +30,30 @@ input.button {font-family: inherit; font-size: inherit;}
 .global-nav {display: table-cell; vertical-align: middle;}
 
 .global-nav ul {display: inline; list-style-type: none; margin: 0; padding: 0;}
-.global-nav a {display: inline-block; padding: 15px;}
+.global-nav a,
+.global-nav .grouping {display: inline-block; padding: 15px;}
 .global-nav a.basket {padding-right: 0; background-repeat: no-repeat; background-position: 15px center; padding-left: 40px; float: right;}
 
-.global-nav ul li {display: inline-block;}
+.global-nav li {display: inline-block; vertical-align: top;}
+.global-nav li ul,
+.global-nav li li {display: block;}
+.global-nav li li a {padding: 7px 15px; font-weight: normal; float: none; display: block;}
+.main-header .global-nav li ul {margin-bottom: 8px;}
 
 .ie img {-ms-interpolation-mode: bicubic;}
 .ie #spacer {display: none;}
 .ie .main-header {position: static;}
 .ie .main-header .middle {display: block;}
 .ie .main-header h1 {float: left; display: block;}
-.ie .main-header .global-nav {display: block; float: none; text-align: right; margin-top: 15px; text-align: right;}
+.ie .main-header .global-nav {display: block; float: none; text-align: left;}
 
-.ie .main-header .global-nav ul,
-.ie .main-header .global-nav li,
-.ie .main-header .global-nav .basket {float: none; display: inline; background-image: none;}
-.ie .main-header .global-nav a {float: none; padding: 0; margin-left: 15px;}
+.ie .main-header .global-nav .basket {float: right; background-image: none;}
 .ie .main-header .global-nav .basket .items {display: inline;}
 .ie .button {height: auto;}
+.ie .main-header .global-nav ul {float: left; display: inline;}
+.ie .main-header .global-nav li {float: left; display: inline;}
+.ie .main-header .global-nav ul ul,
+.ie .main-header .global-nav li li {float: none; display: block;}
 
 .main-content {margin: 0 auto; overflow: hidden; margin-top: 20px; text-align: left;}
 .main-content h1,
@@ -86,9 +93,17 @@ input.button {font-family: inherit; font-size: inherit;}
 .product-variants label {font-weight: normal;}
 
 .main-footer {margin: 0 auto; overflow: hidden; padding: 20px; text-align: left;}
-.main-footer .utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px;}
-.main-footer .utility-nav li {display: inline;}
-.main-footer .utility-nav a {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+.utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px;}
+.utility-nav li {display: inline-block; vertical-align: top;}
+.utility-nav a,
+.utility-nav .grouping {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+.utility-nav .grouping {float: none; display: block;}
+.utility-nav li ul,
+.utility-nav li li {display: block;}
+.utility-nav li li a {float: none; display: block;}
+
+.ie .main-footer .utility-nav li {float: left;}
+.ie .main-footer .utility-nav li li {float: none;}
 
 table {margin-bottom: 0; padding-bottom: 20px;}
 .order-wrap .fields,
