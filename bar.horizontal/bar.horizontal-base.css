@@ -16,6 +16,7 @@
 .global-nav {display: table-cell; vertical-align: middle; padding: 30px 0;}
 .main-header h1.logo a,
 .main-header h1.logo img {display: block;}
+.main-header h1.text {vertical-align: top;}
 .main-header h1.text a {padding: 15px 0;}
 .main-header .basket {float: right;}
 .global-nav {text-align: right;}

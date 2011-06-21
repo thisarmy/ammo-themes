@@ -96,7 +96,7 @@ body {background-image: url({{images.background.fullURL}});}
 .canvas {color: {{colours.canvasText}};}
 .canvas a, .canvas a:visited {color: {{colours.canvasLinks}};}
 .canvas a:focus, .canvas a:hover {color: {{colours.canvasLinksRollover}};}
-.canvas nav li, .canvas .pagination span {border-left-color: {{colours.canvasNav}};}
+.canvas .pagination span {border-left-color: {{colours.canvasNav}};}
 .canvas nav a, .canvas nav a:visited  {color: {{colours.canvasNav}};}
 .canvas nav ul li.selected a {color: {{colours.canvasNavSelected}};}
 .canvas nav a:hover, .canvas .pagination span:hover {color: {{colours.canvasNavRollover}};}

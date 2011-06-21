@@ -107,9 +107,9 @@ a:focus, a:hover {color: {{colours.canvasLinksRollover}};}
 .pagination span:hover {color: {{colours.navRollover}};}
 .main-header nav ul li.selected a {color: {{colours.navSelected}};}
 
-.utility-nav a, .utility-nav a:visited {color: {{colours.utilityNav}}; text-decoration: none;}
-.utility-nav a:focus, .utility-nav a:hover {color: {{colours.utilityNavRollover}};}
-.utility-nav ul li.selected a {color: {{colours.utilityNavSelected}};}
+.main-footer a, .main-footer a:visited {color: {{colours.utilityNav}}; text-decoration: none;}
+.main-footer a:focus, .main-footer a:hover {color: {{colours.utilityNavRollover}};}
+.main-footer ul li.selected a {color: {{colours.utilityNavSelected}};}
 
 hr, fieldset, fieldset legend,
 .main-content h1,

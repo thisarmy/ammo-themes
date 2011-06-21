@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {font-family: {{fonts.headings}};}
 .canvas a, .canvas a:visited {color: {{colours.canvasLinks}};}
 .canvas a:focus, .canvas a:hover {color: {{colours.canvasLinksRollover}};}
 .canvas nav li, .canvas .pagination span {border-left-color: {{colours.canvasNav}};}
-.canvas nav a, .canvas nav a:visited  {color: {{colours.canvasNav}};}
+.canavs nav li, .canvas nav a, .canvas nav a:visited  {color: {{colours.canvasNav}};}
 .canvas nav a:hover, .canvas .pagination span:hover {color: {{colours.canvasNavRollover}};}
 
 .canvas h1, .canvas h2, .canvas h2, .canvas h4, .canvas h5, .canvas h6,
