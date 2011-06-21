@@ -7,10 +7,13 @@ img {max-width: 630px; height: auto;}
 .main-header h1.text {font-size: 12px; line-height: 1.5em; padding: 15px 0;}
 .main-header h1.text a,
 .main-header h1.text a:hover {text-decoration: none;}
-.global-nav a,
-.main-header .basket {display: block; text-decoration: none; font-size: 12px; line-height: 15px; text-transform: uppercase; padding: 15px;}
 .global-nav {margin-top: 15px;}
+.global-nav a,
+.global-nav .grouping,
+.main-header .basket {display: block; text-decoration: none; font-size: 12px; line-height: 15px; text-transform: uppercase; padding: 15px;}
 .main-header .basket {position: absolute; top: -60px; right: 0; padding: 15px; padding-left: 40px; background-repeat: no-repeat; background-position: 15px center; font-size: 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;}
+.main-header .global-nav li ul {margin-bottom: 8px;}
+.global-nav li li a {padding: 7px 15px; border: none;}
 
 .disable-buy-image input.add, input.checkout, input.order {font-size: 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; text-transform: uppercase; padding: 15px;}
 .disable-buy-image input.add {padding-left: 40px; background-repeat: no-repeat; background-position: 15px center;}
@@ -27,9 +30,17 @@ img {max-width: 630px; height: auto;}
 .single-product .product-images {margin-bottom: 30px;}
 
 .main-footer {overflow: hidden; text-align: left; padding: 30px; clear: both;}
-.utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px; text-align: right;}
-.utility-nav ul {display: inline-block;}
-.utility-nav li {display: inline;}
-.utility-nav a {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+.utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px;}
+.utility-nav ul {display: block;}
+.utility-nav li {display: inline-block; vertical-align: top;}
+.utility-nav a,
+.utility-nav .grouping {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+.utility-nav .grouping {float: none; display: block;}
+.utility-nav li ul,
+.utility-nav li li {display: block;}
+.utility-nav li li a {float: none; display: block;}
+
+.ie .utility-nav li {float: left;}
+.ie .utility-nav li li {float: none;}
 
 .ie img {-ms-interpolation-mode: bicubic;}

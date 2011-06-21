@@ -3,7 +3,8 @@
 .main-header {float: left; width: 255px;}
 .main-header img {max-width: 255px;}
 
-.main-content {float: right; padding: 30px; width: 630px;}
+.main-content,
+.main-footer {float: right; padding: 30px; width: 630px;}
 
 .product-thumbnails .product {float: left; margin-right: 30px; width: 300px;}
 .product-thumbnails .product img {width: 300px;}

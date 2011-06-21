@@ -127,6 +127,7 @@ box-shadow: 1px 2px 2px {{colours.shadow}};
 .main-header h1.text a, .main-header h1.text a:visited,
 .main-header h1.text a:focus, .main-header h1.text a:hover {color: {{colours.logoText}};}
 .main-header .global-nav li {border-top: 1px solid {{colours.meta}};}
+.main-header .global-nav li li {border: none;}
 
 /* footer */
 
