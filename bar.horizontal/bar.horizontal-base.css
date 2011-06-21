@@ -9,31 +9,40 @@
 .main-header img {margin: 0 auto;}
 
 .global-nav ul a,
+.global-nav ul .grouping,
 .disable-cart-image .main-header .basket,
 .main-header h1.text a {display: block; text-decoration: none; font-size: 12px; line-height: 15px; text-transform: uppercase; padding: 15px;}
 
-.global-nav {display: table-cell; vertical-align: middle;}
+.global-nav {display: table-cell; vertical-align: middle; padding: 30px 0;}
 .main-header h1.logo a,
 .main-header h1.logo img {display: block;}
 .main-header h1.text a {padding: 15px 0;}
 .main-header .basket {float: right;}
 .global-nav {text-align: right;}
 .global-nav ul {display: inline; padding: 0; margin: 0; list-style-type: none;}
-.global-nav li {display: inline-block;}
+.global-nav li {display: inline-block; text-align: left;}
+.global-nav .grouping {float: none; display: block;}
+.global-nav li ul,
+.global-nav li li {display: block;}
+.global-nav li li a {padding: 7px 15px; font-weight: normal; float: none; display: block;}
 
 .enable-cart-image .global-nav {padding-right: 30px;}
 .enable-cart-image .global-nav a {display: inline-block;}
 .enable-cart-image .main-header .basket {padding: 0; display: inline-block; text-align: center; float: right; text-decoration: none; display: inline-block; margin-left: 15px; text-transform: uppercase;}
-.enable-cart-image .main-header .basket .items {}
-
 .disable-cart-image .main-header .basket {background-repeat: no-repeat; background-position: left; padding-left: 40px; background-position: 15px center; font-size: 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; margin-right: -10px; margin-left: 15px;}
 
 .ie img {-ms-interpolation-mode: bicubic;}
 .ie .main-header h1 {float: left; display: block;}
-.ie .main-header .global-nav {display: block; float: right; text-align: right; margin: 30px 0;}
-.ie .global-nav li {display: inline;}
-.ie .global-nav li a {float: left;}
-/*.ie .global-nav .basket {float: none;}*/
+.ie .main-header .global-nav {display: block; float: right; text-align: right;}
+
+
+.ie .main-header .global-nav ul,
+.ie .main-header .global-nav .basket {float: left; display: inline;}
+.ie .main-header .global-nav li {float: left; display: inline;}
+.ie .main-header .global-nav ul ul,
+.ie .main-header .global-nav li li {float: none; display: block;}
+
+
 
 .main-content {clear: both; padding: 30px;  margin-top: 15px;}
 .products-view .main-content,
@@ -48,8 +57,16 @@
 
 .main-footer {overflow: hidden; text-align: left; padding: 30px;}
 .utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px;}
-.utility-nav li {display: inline;}
-.utility-nav a {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+.utility-nav li {display: inline-block; vertical-align: top;}
+.utility-nav a,
+.utility-nav .grouping {text-decoration: none; line-height: 15px; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+.utility-nav .grouping {float: none; display: block;}
+.utility-nav li ul,
+.utility-nav li li {display: block;}
+.utility-nav li li a {float: none; display: block;}
+
+.ie .main-footer .utility-nav li {float: left;}
+.ie .main-footer .utility-nav li li {float: none;}
 
 .empty-basket p:last-child {margin-bottom: 0;}
 
