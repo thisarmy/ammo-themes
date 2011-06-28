@@ -70,10 +70,13 @@ input.button {font-family: inherit; font-size: inherit;}
 
 .empty-basket {padding: 20px; margin-bottom: -20px;}
 
-.page-or-view .product-thumbnails {margin-left: -20px;}
+.page-or-view .product-thumbnails,
+.page-or-view .range-thumbnails {margin-left: -20px;}
 
-.product-thumbnails .product-meta {text-align: left;}
-.product-thumbnails h1 {border-bottom: none;}
+.product-thumbnails .product-meta,
+.range-thumbnails .range-meta {text-align: left;}
+.product-thumbnails h1,
+.range-thumbnails h1 {border-bottom: none;}
 
 .pagination {margin-top: 20px;}
 

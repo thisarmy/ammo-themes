@@ -106,7 +106,8 @@ body {background-image: url({{images.background.fullURL}});}
 .canvas nav a:hover, .canvas .pagination span:hover {color: {{colours.canvasNavRollover}};}
 
 .canvas h1, .canvas h2, .canvas h2, .canvas h4, .canvas h5, .canvas h6,
-h1.product-name a, h1.product-name a:visited, h1.product-name a:focus, h1.product-name a:hover {color: {{colours.headings}};}
+h1.product-name a, h1.product-name a:visited, h1.product-name a:focus, h1.product-name a:hover,
+h1.range-name a, h1.range-name a:visited, h1.range-name a:focus, h1.range-name a:hover {color: {{colours.headings}};}
 .canvas h1 a:hover, .canvas h2 a:hover, .canvas h3 a:hover, .canvas h4 a:hover, .canvas h5 a:hover, .canvas h6 a:hover {text-decoration: underline;}
 
 
@@ -163,7 +164,8 @@ box-shadow: 1px 2px 2px {{colours.shadow}};
 
 .status, .errors {border-bottom-color: {{colours.meta}}; border-top-color: {{colours.meta}};}
 
-.product-thumbnails .product {text-align: {{choices.thumbnailTextAlign|choice-class}};}
+.product-thumbnails .product,
+.range-thumbnails .range {text-align: {{choices.thumbnailTextAlign|choice-class}};}
 
 
 /**

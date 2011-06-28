@@ -4,7 +4,8 @@ img {max-width: 290px; height: auto;}
 
 .main-header ul a {padding: 5px 8px;}
 
-.product-thumbnails .product {padding-top: 15px; border-top-width: 5px; border-top-style: solid; margin-bottom: 30px;}
+.product-thumbnails .product,
+.range-thumbnails .range {padding-top: 15px; border-top-width: 5px; border-top-style: solid; margin-bottom: 30px;}
 
 .single-product .product-images,
 .order-wrap .fields {margin-bottom: 30px;}

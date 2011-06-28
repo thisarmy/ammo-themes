@@ -6,8 +6,10 @@ img {max-width: 290px; height: auto;}
 
 .main-content {padding: 15px;}
 
-.product-thumbnails .product {width: 290px; margin: 0 auto; margin-bottom: 1.5em; float: none;}
-.product-thumbnails .product img {max-width: 290px;}
+.product-thumbnails .product,
+.range-thumbnails .range {width: 290px; margin: 0 auto; margin-bottom: 1.5em; float: none;}
+.product-thumbnails .product img,
+.range-thumbnails .range img {max-width: 290px;}
 
 .single-product .product-images {margin-bottom: 1.5em;}
 .single-product .product-images img {max-width: 290px;}

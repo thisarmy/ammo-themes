@@ -5,8 +5,10 @@ img {max-width: 450px; height: auto;}
 .main-header h1 {text-align: center; padding: 30px 0;}
 .main-header .basket {display: block; text-align: center;}
 
-.product-thumbnails .m2 {margin-right: 0;}
-.product-thumbnails .m2n {clear: both;}
+.product-thumbnails .m2,
+.range-thumbnails .m2 {margin-right: 0;}
+.product-thumbnails .m2n,
+.range-thumbnails .m2n {clear: both;}
 
 .single-product .product-images {margin-bottom: 1.5em;}
 .single-product .product-images ul {margin: 0 auto; width: 420px;}

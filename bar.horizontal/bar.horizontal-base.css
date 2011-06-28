@@ -21,7 +21,7 @@
 .main-header .basket {float: right;}
 .global-nav {text-align: right;}
 .global-nav ul {display: inline; padding: 0; margin: 0; list-style-type: none;}
-.global-nav li {display: inline-block; text-align: left;}
+.global-nav li {display: inline-block; text-align: left; vertical-align: top;}
 .global-nav .grouping {float: none; display: block;}
 .global-nav li ul,
 .global-nav li li {display: block;}
@@ -49,9 +49,12 @@
 .products-view .main-content,
 .range-permalink .main-content {padding-bottom: 12px;}
 
-.product-thumbnails .product {float: left; margin-right: 30px; width: 210px;}
-.product-thumbnails .product img {max-width: 210px; height: auto;}
-.product-thumbnails .product-listing p {font-size: 1em;}
+.product-thumbnails .product,
+.range-thumbnails .range {float: left; margin-right: 30px; width: 210px;}
+.product-thumbnails .product img,
+.range-thumbnails .range img {max-width: 210px; height: auto;}
+.product-thumbnails .product-listing p,
+.range-thumbnails .range-listing p {font-size: 1em;}
 
 .single-product, .order-wrap {overflow: hidden; width: 100%;}
 .pagination {text-align: left;}

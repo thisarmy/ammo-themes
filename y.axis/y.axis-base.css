@@ -27,12 +27,17 @@ input.button {font-family: inherit; font-size: inherit;}
 .page-or-view .main-content {padding: 20px; padding-right: 0;}
 .basket-order-or-track .main-content {padding: 0;}
 
-.page-or-view .product-thumbnails {margin-left: -20px;}
+.page-or-view .product-thumbnails,
+.page-or-view .range-thumbnails {margin-left: -20px;}
 
-.product-thumbnails .product-meta {text-align: left;}
-.product-thumbnails .product-listing p:last-child {margin-bottom: 0;}
+.product-thumbnails .product-meta,
+.range-thumbnails .range-meta {text-align: left;}
+.product-thumbnails .product-listing p:last-child,
+.range-thumbnails .range-listing p:last-child {margin-bottom: 0;}
 .product-thumbnails h1,
-.product-thumbnails h2 {border-bottom: none;}
+.range-thumbnails h1,
+.product-thumbnails h2
+.range-thumbnails h2 {border-bottom: none;}
 
 .pagination {margin-top: 20px;}
 

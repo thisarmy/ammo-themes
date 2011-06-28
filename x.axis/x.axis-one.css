@@ -17,8 +17,10 @@ img {max-width: 300px; height: auto;}
 .field select {width: 280px;}
 textarea {width: 265px; margin-bottom: 20px;}
 
-.product-thumbnails .product {margin-bottom: 10px; margin-right: 0; padding: 20px; padding-right: 0;}
-.product-thumbnails .product img {max-width: 300px;}
+.product-thumbnails .product,
+.range-thumbnails .range {margin-bottom: 10px; margin-right: 0; padding: 20px; padding-right: 0;}
+.product-thumbnails .product img,
+.range-thumbnails .range img {max-width: 300px;}
 
 .single-product .product-text {margin-bottom: 10px;}
 

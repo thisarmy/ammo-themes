@@ -95,6 +95,7 @@ fieldset {border-color: {{colours.canvasBorder}};}
 .main-header .tag, .main-header .basket:visited {background-color: {{colours.meta}}; color: {{colours.canvasNav}};}
 .main-header .basket:hover {color: {{colours.canvasNavRollover}};}
 .product-thumbnails .product,
+.range-thumbnails .range,
 .single-product .product-images,
 .single-product .product-detail,
 .order-wrap .fields,
@@ -111,7 +112,8 @@ fieldset {border-color: {{colours.canvasBorder}};}
 
 .main-header .basket .name {background-image: url({{images.cartIcon.fullURL}});}
 
-.product-thumbnails .product {text-align: {{choices.thumbnailTextAlign|choice-class}};}
+.product-thumbnails .product,
+.range-thumbnails .range {text-align: {{choices.thumbnailTextAlign|choice-class}};}
 
 {{customCSS}}
 </style>

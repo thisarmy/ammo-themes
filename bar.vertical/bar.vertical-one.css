@@ -8,8 +8,10 @@
 .range-permalink .main-content {padding-bottom: 0;}
 .main-content img {max-width: 290px;}
 
-.product-thumbnails .product {width: 290px;}
-.product-thumbnails .product img {max-width: 290px;}
+.product-thumbnails .product,
+.range-thumbnails .range {width: 290px;}
+.product-thumbnails .product img,
+.range-thumbnails .range img {max-width: 290px;}
 
 .single-procuct .product-images img {max-width: 290px;}
 

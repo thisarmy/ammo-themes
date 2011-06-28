@@ -89,6 +89,10 @@ h1, h2, h3, h4, h5, h6,
 .product-name a:visited,
 .product-name a:focus,
 .product-name a:hover,
+.range-name a,
+.range-name a:visited,
+.range-name a:focus,
+.range-name a:hover,
 th {color: {{colours.headings}}; font-family: {{fonts.headings}};}
 
 legend {color: {{colours.headings}};}
@@ -130,6 +134,7 @@ hr, fieldset, fieldset legend,
 .single-product .product-text,
 .single-product .checkout,
 .product-thumbnails .product,
+.range-thumbnails .range,
 .order-wrap .summary,
 .order-wrap .fields,
 .button {background-color: {{colours.canvas}};}

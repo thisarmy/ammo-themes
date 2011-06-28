@@ -2,8 +2,10 @@
 
 img {max-width: 690px; height: auto;}
 
-.product-thumbnails .m3 {margin-right: 0;}
-.product-thumbnails .m3n {clear: both;}
+.product-thumbnails .m3,
+.range-thumbnails .m3 {margin-right: 0;}
+.product-thumbnails .m3n,
+.range-thumbnails .m3n {clear: both;}
 
 .product-images img {max-width: 330px;}
 
