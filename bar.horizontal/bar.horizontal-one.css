@@ -9,7 +9,7 @@ img {max-width: 290px; height: auto;}
 .product-thumbnails .product,
 .range-thumbnails .range {width: 290px; margin: 0 auto; margin-bottom: 1.5em; float: none;}
 .product-thumbnails .product img,
-.range-thumbnails .range img {max-width: 290px;}
+.range-thumbnails .range img {max-width: 290px; display: inline;}
 
 .single-product .product-images {margin-bottom: 1.5em;}
 .single-product .product-images img {max-width: 290px;}

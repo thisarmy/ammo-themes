@@ -9,7 +9,7 @@
 .product-thumbnails .product,
 .range-thumbnails .range {float: left; margin-right: 30px; width: 300px;}
 .product-thumbnails .product img,
-.range-thumbnails .range img {max-width: 300px;}
+.range-thumbnails .range img {max-width: 300px; display: inline;}
 .product-thumbnails .m2,
 .range-thumbnails .m2 {margin-right: 0;}
 .product-thumbnails .m2n,

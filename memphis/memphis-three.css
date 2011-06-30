@@ -4,7 +4,7 @@
 .product-thumbnails .product,
 .range-thumbnails .range {width: 290px; float: left; padding-top: 15px; border-top-width: 5px; border-top-style: solid; margin-right: 30px; margin-bottom: 30px;}
 .product-thumbnails .product img,
-.range-thumbnails .range img {max-width: 290px;}
+.range-thumbnails .range img {max-width: 290px; display: inline;}
 .product-thumbnails .m3,
 .range-thumbnails .m3 {margin-right: 0;}
 .product-thumbnails .m3n,

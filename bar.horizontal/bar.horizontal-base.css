@@ -52,7 +52,7 @@
 .product-thumbnails .product,
 .range-thumbnails .range {float: left; margin-right: 30px; width: 210px;}
 .product-thumbnails .product img,
-.range-thumbnails .range img {max-width: 210px; height: auto;}
+.range-thumbnails .range img {max-width: 210px; height: auto; display: inline;}
 .product-thumbnails .product-listing p,
 .range-thumbnails .range-listing p {font-size: 1em;}
 

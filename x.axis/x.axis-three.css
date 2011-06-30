@@ -11,7 +11,7 @@ img {max-width: 715px; height: auto;}
 .product-thumbnails .product,
 .range-thumbnails .range {float: left; margin-bottom: 10px; margin-right: 30px; padding: 20px; padding-right: 0; width: 205px;}
 .product-thumbnails .product img,
-.range-thumbnails .range img {max-width: 205px;}
+.range-thumbnails .range img {max-width: 205px; display: inline;}
 .product-thumbnails .m3m,
 .range-thumbnails .m3 {margin-right: 0;}
 .product-thumbnails .m3n,

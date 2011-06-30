@@ -11,7 +11,7 @@
 .product-thumbnails .product,
 .range-thumbnails .range {width: 290px;}
 .product-thumbnails .product img,
-.range-thumbnails .range img {max-width: 290px;}
+.range-thumbnails .range img {max-width: 290px; display: inline;}
 
 .single-procuct .product-images img {max-width: 290px;}
 

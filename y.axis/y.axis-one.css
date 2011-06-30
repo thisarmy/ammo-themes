@@ -24,7 +24,7 @@ textarea {width: 265px;}
 .product-thumbnails .product,
 .range-thumbnails .range {margin-bottom: 10px; padding: 20px; padding-right: 0; width: 300px;}
 .product-thumbnails .product img,
-.range-thumbnails .range img {max-width: 300px;}
+.range-thumbnails .range img {max-width: 300px; display: inline;}
 
 .single-product .product-text {margin-bottom: 10px;}
 
