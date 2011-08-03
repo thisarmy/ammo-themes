@@ -222,7 +222,11 @@ $(document).ready(function() {
                     {{else}}
                         {{if first}}checked{{/if}}
                     {{/if}}
-                    > {{variant.name}}</label></li>
+                    > {{variant.name}}</label>
+                    {{if product.hasPriceOverrides}}
+                    <span class="variant-price">{{variant.smartPrice|htmlprice-with-zeroes}}</span>
+                    {{/if}}
+                    </li>
                 {{/loop}}
                 </ul>
             </div>
@@ -231,7 +235,9 @@ $(document).ready(function() {
                 value="{{product.defaultVariant.identifier}}">
         {{/if}}
         <div class="buttonwrap">
+            {{if not product.hasPriceOverrides}}
             <span class="product-price">{{product.price|htmlprice-with-zeroes}}</span>
+            {{/if}}
             {# add a Buy image setting to allow the button to be overridable #}
             <input class="button add"
             {{if images.buy}}

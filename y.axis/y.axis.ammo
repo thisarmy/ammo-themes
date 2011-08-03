@@ -250,9 +250,11 @@ jQuery(document).ready(function($) {
 <article class="single-product">
     <div class="product-detail">
         <h1 class="product-name">
+            {{if not product.hasPriceOverrides}}
             <span class="product-price">
             {{product.price|htmlprice-with-zeroes}}
             </span>
+            {{/if}}
             {{product.name}}
         </h1>
 
@@ -287,7 +289,11 @@ jQuery(document).ready(function($) {
                         {{else}}
                             {{if first}}checked{{/if}}
                         {{/if}}
-                        > {{variant.name}}</label></li>
+                        > {{variant.name}}</label>
+                        {{if product.hasPriceOverrides}}
+                        <span class="variant-price">{{variant.smartPrice|htmlprice-with-zeroes}}</span>
+                        {{/if}}
+                        </li>
                     {{/loop}}
                     </ul>
                 </div>
