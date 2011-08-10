@@ -145,6 +145,8 @@ hr, fieldset, fieldset legend,
 .quick-nav .basket,
 .global-nav .basket {background-image: url({{images.cartIcon.fullURL}});}
 
+.product-variants .variant-price {background-color: {{colours.meta}};}
+
 {{if logos.logo}}
 .global-nav {height: {{logos.logo.height}}px;}
 #spacer {height: {{logos.logo.height}}px;}

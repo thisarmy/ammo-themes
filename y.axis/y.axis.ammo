@@ -147,6 +147,8 @@ hr, fieldset, fieldset legend,
 .quick-nav .basket,
 .global-nav .basket {background-image: url({{images.cartIcon.fullURL}});}
 
+.product-variants .variant-price {background-color: {{colours.meta}};}
+
 /**
 * Custom CSS
 * The following CSS is managed by the Custom CSS setting of the theme.

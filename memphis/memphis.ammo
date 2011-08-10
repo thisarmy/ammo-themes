@@ -103,6 +103,8 @@ fieldset {border-color: {{colours.canvasBorder}};}
 .status, .errors {border-color: {{colours.meta}};}
 .buttonwrap {background-color: {{colours.meta}};}
 
+.product-variants .variant-price {background-color: {{colours.meta}};}
+
 /* footer */
 
 .main-footer {color: colours.footerText}

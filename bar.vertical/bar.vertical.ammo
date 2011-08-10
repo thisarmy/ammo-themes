@@ -109,6 +109,8 @@ h1.range-name a, h1.range-name a:visited, h1.range-name a:focus, h1.range-name a
 .main-header .basket, .main-header .basket:visited {color: {{colours.buttonText}}; background-color: {{colours.buttons}};}
 .main-header .basket:hover {color: {{colours.buttonRollover}};}
 
+.product-variants .variant-price {background-color: {{colours.meta}};}
+
 /* header */
 
 .main-header, .main-content {

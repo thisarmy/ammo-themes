@@ -110,6 +110,7 @@ h1.product-name a, h1.product-name a:visited, h1.product-name a:focus, h1.produc
 h1.range-name a, h1.range-name a:visited, h1.range-name a:focus, h1.range-name a:hover {color: {{colours.headings}};}
 .canvas h1 a:hover, .canvas h2 a:hover, .canvas h3 a:hover, .canvas h4 a:hover, .canvas h5 a:hover, .canvas h6 a:hover {text-decoration: underline;}
 
+.product-variants .variant-price {background-color: {{colours.meta}};}
 
 /* header */
 
