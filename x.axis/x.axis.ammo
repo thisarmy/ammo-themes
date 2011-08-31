@@ -327,14 +327,14 @@ jQuery(document).ready(function($) {
                 <h1>Options</h1>
                 <ul>
                 {{loop product.variants}}
-                    <li>{{variant.name}}</li>
+                    <li>{{variant.name}}
+                    {{if not product.hasPriceOverrides}}
+                    <p class="product-price">{{product.price|htmlprice-with-zeroes}}</p>
+                    {{/if}}
+                    </li>
                 {{/loop}}
                 </ul>
             </div>
-        {{else}}
-            <span class="product-price">
-            {{product.price|htmlprice-with-zeroes}}
-            </span>
         {{/if}}
     {{/if}}
     </div>

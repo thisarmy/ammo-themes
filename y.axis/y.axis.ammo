@@ -316,7 +316,11 @@ jQuery(document).ready(function($) {
                     <h1>Options</h1>
                     <ul>
                     {{loop product.variants}}
-                        <li>{{variant.name}}</li>
+                        <li>{{variant.name}}
+                        {{if product.hasPriceOverrides}}
+                        <span class="variant-price">{{variant.smartPrice|htmlprice-with-zeroes}}</span>
+                        {{/if}}
+                        </li>
                     {{/loop}}
                     </ul>
                 </div>
