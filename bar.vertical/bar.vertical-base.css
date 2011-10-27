@@ -4,13 +4,14 @@ img {max-width: 630px; height: auto;}
 
 .main-header {margin-top: 75px; padding: 15px; position: relative;}
 .main-header h1 {margin: 0; padding: 0; text-align: center;}
-.main-header h1.text {font-size: 12px; line-height: 1.5em; padding: 15px 0;}
+.main-header h1.text {/*font-size: 12px; line-height: 1.5em; */padding: 15px 0;}
 .main-header h1.text a,
 .main-header h1.text a:hover {text-decoration: none;}
 .global-nav {margin-top: 15px;}
 .global-nav a,
 .global-nav .grouping,
-.main-header .basket {display: block; text-decoration: none; font-size: 12px; line-height: 15px; text-transform: uppercase; padding: 15px;}
+.main-header .basket {display: block; text-decoration: none; text-transform: uppercase; padding: 15px;}
+/*font-size: 12px; line-height: 15px;*/
 .main-header .basket {position: absolute; top: -60px; right: 0; padding: 15px; padding-left: 40px; background-repeat: no-repeat; background-position: 15px center; font-size: 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;}
 .main-header .global-nav li ul {margin-bottom: 8px;}
 .global-nav li li a {padding: 7px 15px; border: none;}

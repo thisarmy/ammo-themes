@@ -21,10 +21,15 @@
 {{colour Buttons}}#8ab5d7{{/colour}}
 {{colour Button Text}}#ffffff{{/colour}}
 
-{{font Text}}helvetica, arial, sans-serif{{/font}}
-{{font Logo}}helvetica, arial, sans-serif{{/font}}
-{{font Headings}}helvetica, arial, sans-serif{{/font}}
-{{font Nav}}helvetica, arial, sans-serif{{/font}}
+{{font Text}}"Helvetica Neue", Arial, Helvetica, sans-serif{{/font}}
+{{font Logo}}"Helvetica Neue", Arial, Helvetica, sans-serif{{/font}}
+{{font Headings}}"Helvetica Neue", Arial, Helvetica, sans-serif{{/font}}
+{{font Nav}}"Helvetica Neue", Arial, Helvetica, sans-serif{{/font}}
+
+{{fontsize Text}}12px{{/fontsize}}
+{{fontsize Logo}}12px{{/fontsize}}
+{{fontsize Headings}}12px{{/fontsize}}
+{{fontsize Nav}}12px{{/fontsize}}
 
 {{logo Logo}}example.png{{/logo}}
 
@@ -59,66 +64,10 @@
 <link rel="stylesheet" href="{{cssFiles.three}}" media="screen">
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
 {{fontFaceCode}}
-<style>
+[[Style]]
 
-body {font-family: {{fonts.text}}; background-color: {{colours.stage}}; color: {{colours.footerText}};}
-nav, .pagination {font-family: {{fonts.nav}};}
-h1, h2, h3, h4, h5, h6 {font-family: {{fonts.headings}};}
-
-/* canvas */
-
-.canvas {background-color: {{colours.canvas}}; color: {{colours.canvasText}}; border-color: {{colours.canvasBorder}}; border-top: none;}
-.canvas a, .canvas a:visited {color: {{colours.canvasLinks}};}
-.canvas a:focus, .canvas a:hover {color: {{colours.canvasLinksRollover}};}
-.canvas nav li, .canvas .pagination span {border-left-color: {{colours.canvasNav}};}
-.canavs nav li, .canvas nav a, .canvas nav a:visited  {color: {{colours.canvasNav}};}
-.canvas nav a:hover, .canvas .pagination span:hover {color: {{colours.canvasNavRollover}};}
-
-.canvas h1, .canvas h2, .canvas h2, .canvas h4, .canvas h5, .canvas h6,
-.canvas h1 a, .canvas h2 a, .canvas h3 a, .canvas h4 a, .canvas h5 a, .canvas h6 a,
-.canvas h1 a:visited, .canvas h2 a:visited, .canvas h3 a:visited, .canvas h4 a:visited, .canvas h5 a:visited, .canvas h6 a:visited,
-.canvas h1 a:focus, .canvas h2 a:focus, .canvas h3 a:focus, .canvas h4 a:focus, .canvas h5 a:focus, .canvas h6 a:focus,
-.canvas h1 a:hover, .canvas h2 a:hover, .canvas h3 a:hover, .canvas h4 a:hover, .canvas h5 a:hover, .canvas h6 a:hover {color: {{colours.headings}};}
-.canvas h1 a:hover, .canvas h2 a:hover, .canvas h3 a:hover, .canvas h4 a:hover, .canvas h5 a:hover, .canvas h6 a:hover {text-decoration: underline;}
-
-fieldset {border-color: {{colours.canvasBorder}};}
-
-.button {font-family: {{fonts.text}}; background-color: {{colours.buttons}}; color: {{colours.buttonText}};}
-.button, a.button, a.button:visited, a.button:focus, a.button:hover {color: {{colours.buttonText}};}
-
-.main-header h1.text {font-family: {{fonts.logo}}; background-color: {{colours.logo}};}
-.main-header h1.text a, .main-header h1.text a:visited,
-.main-header h1.text a:focus, .main-header h1.text a:hover {color: {{colours.logoText}};}
-.main-header h1.text a:hover {text-decoration: none;}
-
-.main-header .tag, .main-header .basket:visited {background-color: {{colours.meta}}; color: {{colours.canvasNav}};}
-.main-header .basket:hover {color: {{colours.canvasNavRollover}};}
-.product-thumbnails .product,
-.range-thumbnails .range,
-.single-product .product-images,
-.single-product .product-detail,
-.order-wrap .fields,
-.order-wrap .summary {border-color: {{colours.meta}};}
-.status, .errors {border-color: {{colours.meta}};}
-.buttonwrap {background-color: {{colours.meta}};}
-
-.product-variants .variant-price {background-color: {{colours.meta}};}
-
-/* footer */
-
-.main-footer {color: colours.footerText}
-.main-footer a, .main-footer a:visited {color: {{colours.footerNav}};}
-.main-footer a:focus, .main-footer a:hover {color: {{colours.footerNavRollover}};}
-.main-footer nav li, {border-left-color: {{colours.footerNav}};}
-
-.main-header .basket .name {background-image: url({{images.cartIcon.fullURL}});}
-
-.product-thumbnails .product,
-.range-thumbnails .range {text-align: {{choices.thumbnailTextAlign|choice-class}};}
-
-{{customCSS}}
-</style>
 <!--[if IE]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -219,7 +168,7 @@ $(document).ready(function() {
                     <li><label for="id_variant_{{variant.identifier}}"><input
                     type="radio" name="add" id="id_variant_{{variant.identifier}}"
                     value="{{variant.identifier}}"
-                    {{if product.default_variant}}
+                    {{if product.defaultVariant}}
                         {{if variant.isDefault}}checked{{/if}}
                     {{else}}
                         {{if first}}checked{{/if}}
@@ -277,3 +226,69 @@ $(document).ready(function() {
 </div>
 </article>
 {{/override}}
+
+{{override Style}}
+<style class="settings">
+
+html,
+body {font-family: __fonts.text__; font-size: __fontsizes.text__; background-color: __colours.stage__; color: __colours.footerText__;}
+nav, .pagination {font-family: __fonts.nav__; font-size: __fontsizes.nav__;}
+h1, h2, h3, h4, h5, h6 {font-family: __fonts.headings__; font-size: __fontsizes.headings__;}
+.product-thumbnails h1.product-name, .range-thumbnails h1.range-name, .product-thumbnails .product-price .range-thumbnails .range-price {
+font-family: __fonts.text__; font-size: __fontsizes.text__; line-height: 1.5;}
+
+/* canvas */
+
+.canvas {background-color: __colours.canvas__; color: __colours.canvasText__; border-color: __colours.canvasBorder__; border-top: none;}
+.canvas a, .canvas a:visited {color: __colours.canvasLinks__;}
+.canvas a:focus, .canvas a:hover {color: __colours.canvasLinksRollover__;}
+.canvas nav li, .canvas .pagination span {border-left-color: __colours.canvasNav__;}
+.canavs nav li, .canvas nav a, .canvas nav a:visited  {color: __colours.canvasNav__;}
+.canvas nav a:hover, .canvas .pagination span:hover {color: __colours.canvasNavRollover__;}
+
+.canvas h1, .canvas h2, .canvas h2, .canvas h4, .canvas h5, .canvas h6,
+.canvas h1 a, .canvas h2 a, .canvas h3 a, .canvas h4 a, .canvas h5 a, .canvas h6 a,
+.canvas h1 a:visited, .canvas h2 a:visited, .canvas h3 a:visited, .canvas h4 a:visited, .canvas h5 a:visited, .canvas h6 a:visited,
+.canvas h1 a:focus, .canvas h2 a:focus, .canvas h3 a:focus, .canvas h4 a:focus, .canvas h5 a:focus, .canvas h6 a:focus,
+.canvas h1 a:hover, .canvas h2 a:hover, .canvas h3 a:hover, .canvas h4 a:hover, .canvas h5 a:hover, .canvas h6 a:hover {color: __colours.headings__;}
+.canvas h1 a:hover, .canvas h2 a:hover, .canvas h3 a:hover, .canvas h4 a:hover, .canvas h5 a:hover, .canvas h6 a:hover {text-decoration: underline;}
+
+fieldset {border-color: __colours.canvasBorder__;}
+
+.button {font-family: __fonts.text__; font-size: __fontsizes.text__; background-color: __colours.buttons__; color: __colours.buttonText__;}
+.button, a.button, a.button:visited, a.button:focus, a.button:hover {color: __colours.buttonText__;}
+
+.main-header h1.text {font-family: __fonts.logo__; font-size: __fontsizes.logo__; background-color: __colours.logo__;}
+.main-header h1.text a, .main-header h1.text a:visited,
+.main-header h1.text a:focus, .main-header h1.text a:hover {color: __colours.logoText__;}
+.main-header h1.text a:hover {text-decoration: none;}
+
+.main-header .tag, .main-header .basket:visited {background-color: __colours.meta__; color: __colours.canvasNav__;}
+.main-header .basket:hover {color: __colours.canvasNavRollover__;}
+.product-thumbnails .product,
+.range-thumbnails .range,
+.single-product .product-images,
+.single-product .product-detail,
+.order-wrap .fields,
+.order-wrap .summary {border-color: __colours.meta__;}
+.status, .errors {border-color: __colours.meta__;}
+.buttonwrap {background-color: __colours.meta__;}
+
+.product-variants .variant-price {background-color: __colours.meta__;}
+
+/* footer */
+
+.main-footer {color: __colours.footerText__;}
+.main-footer a, .main-footer a:visited {color: __colours.footerNav__;}
+.main-footer a:focus, .main-footer a:hover {color: __colours.footerNavRollover__;}
+.main-footer nav li, {border-left-color: __colours.footerNav__;}
+
+.main-header .basket .name {background-image: url(__images.cartIcon.fullURL__);}
+
+.product-thumbnails .product,
+.range-thumbnails .range {text-align: __choices.thumbnailTextAlign|choice-class__;}
+
+__customCSS__
+</style>
+{{/override}}
+

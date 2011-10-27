@@ -12,7 +12,7 @@
 
 .single-product,
 .order-wrap {overflow: hidden; width: 100%;}
-.single-product .product-name {font-size: 2em; margin-bottom:0.75em;}
+.single-product .product-name {/*font-size: 2em; */margin-bottom:0.75em;}
 .single-product .product-images,
 .order-wrap .fields {float: left; width: 610px;}
 .single-product .product-detail,

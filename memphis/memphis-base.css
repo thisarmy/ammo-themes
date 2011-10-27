@@ -1,7 +1,7 @@
 .canvas {margin: 0 auto; text-align: left; margin-bottom: 15px; border-width: 15px; border-style: solid;}
 
 .main-header {position: relative; padding: 0 15px}
-.main-header a, .main-header .grouping, .main-header .basket {text-decoration: none; font-size: 12px; line-height: 15px; font-weight: bold; text-transform: uppercase; float: left; padding: 15px;}
+.main-header a, .main-header .grouping, .main-header .basket {text-decoration: none; /*font-size: 12px; line-height: 15px; */font-weight: bold; text-transform: uppercase; float: left; padding: 15px;}
 .main-header .basket {float: right; padding-top: 0;}
 .main-header .basket .name {text-indent: -10000px; background-repeat: no-repeat; background-position: center; height: 21px;}
 .main-header .basket .items {font-weight: normal; font-size: 9px; line-height: 12px; padding-top: 15px; padding-bottom: 10px; text-align: center;}
@@ -36,14 +36,14 @@
 .order-wrap .fields,
 .order-wrap .summary {border-top-width: 5px; border-top-style: solid; padding-top: 15px;}
 
-.single-product .product-name {font-size: 2em; margin-bottom:0.75em;}
+.single-product .product-name {/*font-size: 2em; */margin-bottom:0.75em;}
 
 .main-footer {overflow: hidden; margin: 0 auto; text-align: left;}
 .main-footer .utility-nav {width: 100%; overflow: hidden; margin-bottom: 10px;}
 .main-footer .utility-nav ul {margin: 0; padding: 0; list-style-type: none;}
 .main-footer .utility-nav li {display: inline-block; vertical-align: top;}
 .main-footer .utility-nav a,
-.main-footer .utility-nav .grouping {text-decoration: none; font-size: 12px; line-height: 15px; font-weight: bold; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
+.main-footer .utility-nav .grouping {text-decoration: none; /*font-size: 12px; line-height: 15px; */font-weight: bold; text-transform: uppercase; float: left; padding: 5px 0; padding-right: 15px;}
 .main-footer .utility-nav .grouping {float: none; display: block;}
 .main-footer .utility-nav li ul,
 .main-footer .utility-nav li li {display: block;}
