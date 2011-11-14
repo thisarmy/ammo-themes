@@ -1,6 +1,6 @@
 img {max-width: 630px; height: auto;}
 
-.canvas {margin: 0 auto; text-align: left;}
+.canvas {margin: 0 auto; overflow: hidden; text-align: left;}
 
 .main-header {margin-top: 75px; padding: 15px; position: relative;}
 .main-header h1 {margin: 0; padding: 0; text-align: center;}

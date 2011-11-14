@@ -1,5 +1,7 @@
 body {text-align: left;}
 
+.canvas {overflow: hidden;}
+
 p {/*font-size: 1.2em; line-height: 1.6; */margin: 0 0 1.5em; padding-bottom: 1px;}
 
 .single-product .checkout {position: relative; margin-bottom: 73px;}
