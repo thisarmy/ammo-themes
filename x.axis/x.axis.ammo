@@ -184,9 +184,14 @@ jQuery(document).ready(function($) {
         <div class="product-detail">
             <h1 class="product-name">
                 {{if not product.hasPriceOverrides}}
-                <span class="product-price">
-                {{product.price|htmlprice-with-zeroes}}
-                </span>
+                    {# the product has one price only #}
+                    <span class="product-price">{{product.price|htmlprice-with-zeroes}}</span>
+                {{/if}}
+                {{if not product.hasMultipleVariants}}
+                    {{if product.outOfStock}}
+                        {# the only variant is out of stock #}
+                        <span class="out-of-stock">{{store.outOfStockLabel}}</span>
+                    {{/if}}
                 {{/if}}
                 {{product.name}}
             </h1>
@@ -206,7 +211,9 @@ jQuery(document).ready(function($) {
     </div>
 
     <div class="checkout {{if product.hasMultipleVariants}}multi{{else}}single{{/if}}-variant-checkout">
-    {{if store.enableOrders}}
+    {{if product.enabled}}
+        {# orders are enabled and at least one variant is in stock #}
+        {# output the form #}
         <form action="{{views.basket.permalink}}" method="post">
         {{if product.hasMultipleVariants}}
             <div class="product-variants">
@@ -217,14 +224,25 @@ jQuery(document).ready(function($) {
                     type="radio" name="add"
                     id="id_variant_{{variant.identifier}}"
                     value="{{variant.identifier}}"
-                    {{if product.defaultVariant}}
-                        {{if variant.isDefault}}checked{{/if}}
+                    {{if variant.disabled}}
+                        {# out of stock and out of stock purchaces disabled #}
+                        disabled
                     {{else}}
-                        {{if first}}checked{{/if}}
+                        {# this is likely going away in future #}
+                        {{if product.defaultVariant}}
+                            {{if variant.isDefault}}checked{{/if}}
+                        {{else}}
+                            {{if first}}checked{{/if}}
+                        {{/if}}
                     {{/if}}
                     > {{variant.name}}</label>
                     {{if product.hasPriceOverrides}}
-                    <span class="variant-price">{{variant.smartPrice|htmlprice-with-zeroes}}</span>
+                        {# show variant prices if they aren't all the same #}
+                        <span class="variant-price">{{variant.smartPrice|htmlprice-with-zeroes}}</span>
+                    {{/if}}
+                    {{if variant.outOfStock}}
+                        {# show out of stock regardless of enabled/disabled #}
+                        <span class="out-of-stock">{{store.outOfStockLabel}}</span>
                     {{/if}}
                     </li>
                 {{/loop}}
@@ -241,14 +259,19 @@ jQuery(document).ready(function($) {
         </div>
         </form>
     {{else}}
+        {# either orders are disabled or the product is out of stock #}
+        {# just output the options without radio buttons. #}
         {{if product.hasMultipleVariants}}
             <div class="product-variants">
                 <h1>Options</h1>
                 <ul>
                 {{loop product.variants}}
                     <li>{{variant.name}}
-                    {{if not product.hasPriceOverrides}}
-                    <p class="product-price">{{product.price|htmlprice-with-zeroes}}</p>
+                    {{if product.hasPriceOverrides}}
+                        <p class="variant-price">{{variant.smartPrice|htmlprice-with-zeroes}}</p>
+                    {{/if}}
+                    {{if variant.outOfStock}}
+                        <span class="out-of-stock">{{store.outOfStockLabel}}</span>
                     {{/if}}
                     </li>
                 {{/loop}}

@@ -158,7 +158,8 @@ $(document).ready(function() {
     <h1 class="product-name">{{product.name}}</h1>
     <div class="product-text">{{product.detail|html small}}</div>
 
-    {{if store.enableOrders}}
+    {{if product.enabled}}
+        {# orders are enabled and at least one variant is in stock #}
         {# output the form #}
         <form action="{{views.basket.permalink}}" method="post">
         {{if product.hasMultipleVariants}}
@@ -168,14 +169,25 @@ $(document).ready(function() {
                     <li><label for="id_variant_{{variant.identifier}}"><input
                     type="radio" name="add" id="id_variant_{{variant.identifier}}"
                     value="{{variant.identifier}}"
-                    {{if product.defaultVariant}}
-                        {{if variant.isDefault}}checked{{/if}}
+                    {{if variant.disabled}}
+                        {# out of stock and out of stock purchaces disabled #}
+                        disabled
                     {{else}}
-                        {{if first}}checked{{/if}}
+                        {# this is likely going away in future #}
+                        {{if product.defaultVariant}}
+                            {{if variant.isDefault}}checked{{/if}}
+                        {{else}}
+                            {{if first}}checked{{/if}}
+                        {{/if}}
                     {{/if}}
                     > {{variant.name}}</label>
                     {{if product.hasPriceOverrides}}
-                    <span class="variant-price">{{variant.smartPrice|htmlprice-with-zeroes}}</span>
+                        {# show variant prices if they aren't all the same #}
+                        <span class="variant-price">{{variant.smartPrice|htmlprice-with-zeroes}}</span>
+                    {{/if}}
+                    {{if variant.outOfStock}}
+                        {# show out of stock regardless of enabled/disabled #}
+                        <span class="out-of-stock">{{store.outOfStockLabel}}</span>
                     {{/if}}
                     </li>
                 {{/loop}}
@@ -187,8 +199,10 @@ $(document).ready(function() {
         {{/if}}
         <div class="buttonwrap">
             {{if not product.hasPriceOverrides}}
-            <span class="product-price">{{product.price|htmlprice-with-zeroes}}</span>
+                {# the product has one price only #}
+                <span class="product-price">{{product.price|htmlprice-with-zeroes}}</span>
             {{/if}}
+
             {# add a Buy image setting to allow the button to be overridable #}
             <input class="button add"
             {{if images.buy}}
@@ -205,6 +219,7 @@ $(document).ready(function() {
         </div>
         </form>
     {{else}}
+        {# either orders are disabled or the product is out of stock #}
         {# just output the options without radio buttons. #}
         {{if product.hasMultipleVariants}}
             <div class="product-variants">
@@ -214,13 +229,23 @@ $(document).ready(function() {
                     {{if product.hasPriceOverrides}}
                     <span class="variant-price">{{variant.smartPrice|htmlprice-with-zeroes}}</span>
                     {{/if}}
+                    {{if variant.outOfStock}}
+                        <span class="out-of-stock">{{store.outOfStockLabel}}</span>
+                    {{/if}}
                     </li>
                 {{/loop}}
                 </ul>
             </div>
         {{/if}}
         {{if not product.hasPriceOverrides}}
-        <p class="product-price">{{product.price|htmlprice-with-zeroes}}</p>
+            {# the product has one price only #}
+            <p class="product-price">{{product.price|htmlprice-with-zeroes}}</p>
+        {{/if}}
+        {{if not product.hasMultipleVariants}}
+            {{if product.outOfStock}}
+                {# the only variant is out of stock #}
+                <span class="out-of-stock">{{store.outOfStockLabel}}</span>
+            {{/if}}
         {{/if}}
     {{/if}}
 </div>
