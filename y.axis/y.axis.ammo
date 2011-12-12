@@ -205,10 +205,10 @@ jQuery(document).ready(function($) {
         <div class="product-text">{{product.detail|html small}}</div>
         {{/if}}
 
+        <div class="checkout {{if product.hasMultipleVariants}}multi{{else}}single{{/if}}-variant-checkout">
         {{if product.enabled}}
         {# orders are enabled and at least one variant is in stock #}
         {# output the form #}
-        <div class="checkout {{if product.hasMultipleVariants}}multi{{else}}single{{/if}}-variant-checkout">
             <form action="{{specialPages.basket.permalink}}" method="post">
             {{if product.hasMultipleVariants}}
                 <div class="product-variants">
@@ -254,7 +254,6 @@ jQuery(document).ready(function($) {
                     value="Add to {{specialPages.basket.name|lowercase}}">
             </div>
             </form>
-        </div>
         {{else}}
             {# either orders are disabled or the product is out of stock #}
             {# just output the options without radio buttons. #}
@@ -276,6 +275,7 @@ jQuery(document).ready(function($) {
                 </div>
             {{/if}}
         {{/if}}
+        </div>
     </div>
 </article>
 {{/override}}
