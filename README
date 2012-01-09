@@ -1,0 +1,37 @@
+Custom Ammo theme building is still in beta, but if you're brave enough you can
+try it out if you really want to.
+
+Just remember that it can still break at any time as the way themes work are
+still in flux. We're adding features and some of them will likely become
+"required" features that all themes have to support in order to be considered
+"working".
+
+The URL for getting to themes is still hidden so that people don't get there by
+accident, but if you want to you can go there directly:
+http://get.someammo.com/themes
+
+There's some documentation that might be slightly outdated at the moment here:
+http://get.someammo.com/themes/documentation
+(It catches up with current reality every once in a while.)
+
+And the default snippets are here:
+http://get.someammo.com/themes/snippets
+(widgets and snippets are explained in the documentation)
+
+The code for all the built-in themes is available here:
+https://github.com/thisarmy/ammo-themes
+(That should help as some decent examples.)
+
+The following sites already use custom themes:
+http://blankspace.co.za/
+http://hatsoff.co.za/
+http://www.lilarose.co.za/
+http://catalogue.lilarose.co.za/
+
+Those were all built by Cuie&Co. (http://cuieandco.com/) who share an office
+with us, so perhaps they are at a bit of an advantage :)
+
+We're also working on "ThemeKit" which is a standalone node.js-based app that
+you can run on your own computer for building and testing themes locally in
+your own text editor, but that's still very rough, completely tied to the rest
+of our codebase and not as easily installable as I would like.
