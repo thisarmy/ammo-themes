@@ -14,7 +14,7 @@ img {max-width: 715px; height: auto;}
 .nav-right .main-header h1.logo {margin-left: 20px;}
 
 .nav-left h1.logo {overflow: hidden;}
-.nav-left h1.logo img {float: right; max-width: 220px;}
+.nav-left h1.logo img {float: right; max-width: 200px;}
 .main-header h1.text {margin-top: 30px;}
 .main-header h1.logo a {padding: 0;}
 .main-header h1.text a {padding: 10px 20px; line-height: 1.2;}
